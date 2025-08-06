@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Meta tags pentru social media -->
+<meta property="og:title" content="Ascultă melodia mea" />
+<meta property="og:description" content="Dă click pentru a asculta" />
+<meta property="og:image" content="iubire-de-vara-summer-mx-cover.jpg" />
+
+<title>Ascultă melodia mea</title>
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Container cu fundal */
+  .background {
+    position: fixed; /* Fixează poziția pentru acoperire completă */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('iubire-de-vara-summer-mx-cover.jpg');
+    background-size: cover; /* Acoperă tot ecranul */
+    background-position: center; /* Centrare */
+    background-repeat: no-repeat;
+    z-index: -1; /* În spate, ca fundal */
+  }
+
+  /* Linkul peste tot */
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Peste fundal */
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- Fundalul -->
+<div class="background"></div>
+
+<!-- Linkul peste tot -->
+<a href="https://push.fm/yourlink" target="_blank" aria-label="Ascultă melodia"></a>
+
+</body>
+</html>
