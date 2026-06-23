@@ -78,23 +78,29 @@ Se încarcă...
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
+console.log("CERT LOAD ID:", id);
+
 fetch("../data.json")
-.then(r => r.json())
+.then(r => {
+    if (!r.ok) throw new Error("JSON not loaded");
+    return r.json();
+})
 .then(data => {
+
+    console.log("DATA OK:", data);
 
     const song = data.songs.find(s => s.id === id);
 
-    if(!song){
+    console.log("FOUND SONG:", song);
+
+    if (!song) {
         document.getElementById("content").innerHTML =
-        "<h2>Certificat inexistent</h2>";
+        "<h2 style='color:red'>Certificat inexistent</h2>";
         return;
     }
 
     document.getElementById("content").innerHTML = `
-
-        <div class="verified">
-            ✓ VERIFIED ON BITCOIN SV
-        </div>
+        <div class="verified">✓ VERIFIED ON BITCOIN SV</div>
 
         <img class="cover" src="../${song.cover}">
 
@@ -107,40 +113,26 @@ fetch("../data.json")
         <div class="label">UPC</div>
         <div class="value">${song.upc}</div>
 
-        <div class="label">INSCRIPTION HASH</div>
-        <div class="value" id="hashText">${song.inscription}</div>
-
-        <button onclick="copyHash()">
-            COPY HASH
-        </button>
+        <div class="label">HASH</div>
+        <div class="value">${song.inscription}</div>
 
         <div class="label">DESCRIERE</div>
         <div class="value">${song.description}</div>
 
         <br><br>
 
-        <div id="qrcode"></div>
-
-        <br><br>
-
         <a class="btn" href="${song.blockchain_url}" target="_blank">
             VERIFY ON BLOCKCHAIN
         </a>
-
     `;
 
-    // QR CODE
-    new QRCode(document.getElementById("qrcode"), {
-        text: song.blockchain_url,
-        width: 150,
-        height: 150
-    });
+})
+.catch(err => {
 
-    // COPY FUNCTION
-    window.copyHash = function () {
-        navigator.clipboard.writeText(song.inscription);
-        alert("Hash copiat!");
-    };
+    console.error("ERROR:", err);
+
+    document.getElementById("content").innerHTML =
+    "<h2 style='color:red'>Eroare la încărcare JSON</h2>";
 
 });
 
