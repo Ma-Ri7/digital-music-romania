@@ -103,62 +103,69 @@ document.addEventListener("DOMContentLoaded", () => {
     // Render carduri
     function renderSongs(list) {
 
-        container.innerHTML = "";
+    container.innerHTML = "";
 
-        if (list.length === 0) {
+    // reset
+    container.classList.remove("single-result");
 
-            container.innerHTML = `
-                <h2>
-                    Nu a fost găsită nicio melodie.
-                </h2>
-            `;
+    if (list.length === 0) {
 
-            return;
+        container.innerHTML = `
+            <h2>
+                Nu a fost găsită nicio melodie.
+            </h2>
+        `;
 
-        }
+        return;
+    }
 
-        list.forEach(song => {
+    // dacă există un singur rezultat
+    if (list.length === 1) {
+        container.classList.add("single-result");
+    }
 
-            container.innerHTML += `
+    list.forEach(song => {
 
-            <div class="card">
+        container.innerHTML += `
 
-                <img
-                    src="${song.cover}"
-                    alt="${song.title}"
-                >
+        <div class="card">
 
-                <h3>${song.title}</h3>
+            <img
+                src="${song.cover}"
+                alt="${song.title}"
+            >
 
-                <p>${song.artist}</p>
+            <h3>${song.title}</h3>
 
-                <p>
-                    ISRC: ${song.isrc}
-                </p>
+            <p>${song.artist}</p>
 
-                <div class="buttons">
+            <p>
+                ISRC: ${song.isrc}
+            </p>
 
-                    <a
-                        class="btn"
-                        href="certificari/?id=${song.id}">
-                        Certificat
-                    </a>
+            <div class="buttons">
 
-                    <a
-                        class="btn2"
-                        href="${song.blockchain_url}"
-                        target="_blank">
-                        Blockchain
-                    </a>
+                <a
+                    class="btn"
+                    href="certificari/?id=${song.id}">
+                    Certificat
+                </a>
 
-                </div>
+                <a
+                    class="btn2"
+                    href="${song.blockchain_url}"
+                    target="_blank">
+                    Blockchain
+                </a>
 
             </div>
 
-            `;
+        </div>
 
-        });
+        `;
 
-    }
+    });
+
+}
 
 });

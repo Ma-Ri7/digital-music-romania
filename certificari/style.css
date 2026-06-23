@@ -164,3 +164,43 @@ section h2{
 h1,h2,h3{
     letter-spacing:0.5px;
 }
+
+/* ===== SINGLE RESULT MODE ===== */
+
+#songs-container.single-result{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+#songs-container.single-result .card{
+    max-width:700px;
+    width:100%;
+    padding:30px;
+}
+
+#songs-container.single-result .card img{
+    width:100%;
+    max-height:700px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+#songs-container.single-result .card h3{
+    font-size:32px;
+    margin-top:20px;
+}
+
+#songs-container.single-result .card p{
+    font-size:18px;
+}
+
+#songs-container.single-result .buttons{
+    margin-top:25px;
+}
+
+#songs-container.single-result .btn,
+#songs-container.single-result .btn2{
+    padding:14px 20px;
+    font-size:16px;
+}
