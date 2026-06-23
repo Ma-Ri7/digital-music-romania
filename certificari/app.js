@@ -4,33 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const container = document.getElementById("songs-container");
     const searchBox = document.getElementById("searchBox");
-    const params = new URLSearchParams(window.location.search);
-    const searchParam = params.get("search");
+
     fetch("data.json")
         .then(response => response.json())
         .then(data => {
 
             songs = data.songs;
-            if(searchParam){
 
-          searchBox.value = searchParam;
-
-          const filtered = songs.filter(song =>
-
-        song.title.toLowerCase().includes(searchParam.toLowerCase()) ||
-        song.artist.toLowerCase().includes(searchParam.toLowerCase()) ||
-        song.isrc.toLowerCase().includes(searchParam.toLowerCase()) ||
-        song.inscription.toLowerCase().includes(searchParam.toLowerCase())
-
-    );
-
-    renderSongs(filtered);
-
-} else {
-
-    renderSongs(songs);
-
-}
             renderSongs(songs);
 
         })
@@ -58,11 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             song.inscription.toLowerCase().includes(value)
 
         );
-          history.replaceState(
-    null,
-    "",
-    "?search=" + encodeURIComponent(value)
-);
+
         renderSongs(filteredSongs);
 
     });
