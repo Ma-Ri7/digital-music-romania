@@ -109,6 +109,83 @@
       "inscription": "cd97b28011d7bf1cc216fbee945321ae256181702ff2b2767d72d41bf499f011",
       "blockchain_url": "https://ordinals.gorillapool.io/content/cd97b28011d7bf1cc216fbee945321ae256181702ff2b2767d72d41bf499f011",
       "description": "XXX"
+    },
+    {
+      "id": "intr-o-alta-viata",
+      "title": "Într-o Altă Viață",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2647347",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.jpg",
+      "inscription": "a6cd0e6c05ce1d0f31f02c13873c0326a5752fdb319c27a2e851460452b7b51c",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/a6cd0e6c05ce1d0f31f02c13873c0326a5752fdb319c27a2e851460452b7b51c",
+      "description": "XXX"
+    },
+    {
+      "id": "al-cerului-ecou",
+      "title": "Al Cerului Ecou ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2655625",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.jpg",
+      "inscription": "5b124edcdc766440121e6c199d8f438ae7df78df91415bba5e21682b23180798",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/5b124edcdc766440121e6c199d8f438ae7df78df91415bba5e21682b23180798",
+      "description": "XXX"
+    },
+    {
+      "id": "in-miez-de-noapte",
+      "title": "În Miez De Noapte ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2665877",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.jpg",
+      "inscription": "402a911cf4022765f2179d3996012ea4172cd25f9dc9c8d9b3bd879aa7f072ac",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/402a911cf4022765f2179d3996012ea4172cd25f9dc9c8d9b3bd879aa7f072ac",
+      "description": "XXX"
+    },
+    {
+      "id": "actrita-desavarsita",
+      "title": "Actriță Desăvârșită ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2655659",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.jpg",
+      "inscription": "918ac19c4f8ae94c7a1567951874a2ed852e8d4f7dd16e4cedd3829b6001bde6",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/918ac19c4f8ae94c7a1567951874a2ed852e8d4f7dd16e4cedd3829b6001bde6",
+      "description": "XXX"
+    },
+    {
+      "id": "vis-ceresc",
+      "title": "Vis Ceresc",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2657644",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.jpg",
+      "inscription": "c803fa24bf50f4dffb2e8e75c61bfded0233a99be8bbcda04667acbb499b2de2",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/c803fa24bf50f4dffb2e8e75c61bfded0233a99be8bbcda04667acbb499b2de2",
+      "description": "XXX"
+    },
+    {
+      "id": "pe-acelasi-drum",
+      "title": "Pe Același Drum",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2637207",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.jpg",
+      "inscription": "06db3f50e18e71bf190a60376f716682b6140b46d0ca79332a13b78da2ba06f9",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/06db3f50e18e71bf190a60376f716682b6140b46d0ca79332a13b78da2ba06f9",
+      "description": "XXX"
+    },
+    {
+      "id": "inima-de-cioburi",
+      "title": "Inimă De Cioburi ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2683480",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.jpg",
+      "inscription": "6b82d826adf903b28015ecdecc0f91c9b9f561d6cd43f2b04797b9024bf47bcb",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/6b82d826adf903b28015ecdecc0f91c9b9f561d6cd43f2b04797b9024bf47bcb",
+      "description": "XXX"
     }
 
   ]
