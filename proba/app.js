@@ -43,23 +43,60 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // RENDER FUNCTION
   function renderSongs(list) {
-    container.innerHTML = list.map(song => `
-      <div class="card">
-        <img src="${song.cover}" alt="${song.title}">
-        <h3>${song.title}</h3>
-        <p>${song.artist}</p>
-        <p style="font-size:12px;color:#777;">ISRC: ${song.isrc}</p>
+    container.innerHTML = container.innerHTML = `
+<div class="cert-box">
 
-        <a class="btn" href="certificari/?id=${song.id}">
-          Certificat
-        </a>
+  <div class="status">
+    ✓ BLOCK CONFIRMED ON BSV
+  </div>
 
-        <a class="btn" style="background:#333;color:#fff;margin-left:5px;"
-           href="${song.blockchain_url}" target="_blank">
-          Blockchain
-        </a>
+  <h2>${song.title}</h2>
+  <p class="artist">${song.artist}</p>
+
+  <div class="grid">
+
+    <div class="left">
+
+      <div class="field">
+        <span>ISRC</span>
+        <p>${song.isrc}</p>
       </div>
-    `).join("");
-  }
 
+      <div class="field">
+        <span>UPC</span>
+        <p>${song.upc}</p>
+      </div>
+
+      <div class="field">
+        <span>INSCRIPTION HASH</span>
+        <p id="hashText">${song.inscription}</p>
+        <button onclick="copyHash()">Copy Hash</button>
+      </div>
+
+      <a href="${song.blockchain_url}" target="_blank" class="btn">
+        Verify on Blockchain
+      </a>
+
+    </div>
+
+    <div class="right">
+      <div id="qrcode"></div>
+    </div>
+
+  </div>
+
+</div>
+`;
+
+// QR CODE
+new QRCode(document.getElementById("qrcode"), {
+  text: song.blockchain_url,
+  width: 140,
+  height: 140
 });
+
+// COPY FUNCTION
+window.copyHash = function() {
+  navigator.clipboard.writeText(song.inscription);
+  alert("Hash copiat!");
+};
