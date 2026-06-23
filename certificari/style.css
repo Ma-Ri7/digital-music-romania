@@ -255,3 +255,10 @@ h1,h2,h3{
     padding:10px;
     border-radius:10px;
 }
+
+#qrcode{
+    display:inline-block;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+}
