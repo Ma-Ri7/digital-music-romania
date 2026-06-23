@@ -186,6 +186,17 @@
       "inscription": "6b82d826adf903b28015ecdecc0f91c9b9f561d6cd43f2b04797b9024bf47bcb",
       "blockchain_url": "https://ordinals.gorillapool.io/content/6b82d826adf903b28015ecdecc0f91c9b9f561d6cd43f2b04797b9024bf47bcb",
       "description": "XXX"
+    },
+    {
+      "id": "10-vieti",
+      "title": "10 Vieți ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXESV2650943",
+      "upc": "5064010334895",
+      "cover": "img/10-vieti.jpg",
+      "inscription": "69db8a0a125b7d05e0360fd8dc211bdb6b03ce7cd1d1f6cb42ff27a1817346ac",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/69db8a0a125b7d05e0360fd8dc211bdb6b03ce7cd1d1f6cb42ff27a1817346ac",
+      "description": "XXX"
     }
 
   ]
