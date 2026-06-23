@@ -204,3 +204,54 @@ h1,h2,h3{
     padding:14px 20px;
     font-size:16px;
 }
+
+/* ===== SINGLE RESULT CERTIFICATE MODE ===== */
+
+#songs-container.single-result{
+    display:flex;
+    justify-content:center;
+}
+
+#songs-container.single-result .card{
+    max-width:800px;
+    width:100%;
+    padding:30px;
+}
+
+.single-badge{
+    display:inline-block;
+    background:#00aa55;
+    color:white;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.single-meta{
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px solid #333;
+}
+
+.single-meta p{
+    margin:10px 0;
+    word-break:break-word;
+}
+
+.single-description{
+    margin-top:20px;
+    line-height:1.7;
+}
+
+.qr-wrapper{
+    margin-top:25px;
+}
+
+.qr-wrapper canvas,
+.qr-wrapper img{
+    background:white;
+    padding:10px;
+    border-radius:10px;
+}

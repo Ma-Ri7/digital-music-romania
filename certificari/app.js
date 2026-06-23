@@ -104,25 +104,106 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderSongs(list) {
 
     container.innerHTML = "";
-
-    // reset
     container.classList.remove("single-result");
 
-    if (list.length === 0) {
+    if(list.length === 0){
 
         container.innerHTML = `
-            <h2>
-                Nu a fost găsită nicio melodie.
-            </h2>
+            <h2>Nu a fost găsită nicio melodie.</h2>
         `;
 
         return;
     }
 
-    // dacă există un singur rezultat
-    if (list.length === 1) {
+    // SINGLE RESULT MODE
+    if(list.length === 1){
+
         container.classList.add("single-result");
+
+        const song = list[0];
+
+        container.innerHTML = `
+
+        <div class="card">
+
+            <div class="single-badge">
+                ✓ VERIFIED ON BLOCKCHAIN
+            </div>
+
+            <img src="${song.cover}" alt="${song.title}">
+
+            <h3>${song.title}</h3>
+
+            <p>${song.artist}</p>
+
+            <div class="single-meta">
+
+                <p>
+                    <strong>ISRC:</strong>
+                    ${song.isrc}
+                </p>
+
+                <p>
+                    <strong>UPC:</strong>
+                    ${song.upc}
+                </p>
+
+                <p>
+                    <strong>Hash:</strong>
+                    ${song.inscription}
+                </p>
+
+            </div>
+
+            <div class="single-description">
+                ${song.description}
+            </div>
+
+            <div class="qr-wrapper">
+                <div id="qr-single"></div>
+            </div>
+
+            <div class="buttons">
+
+                <a
+                    class="btn"
+                    href="certificari/?id=${song.id}">
+                    Certificat
+                </a>
+
+                <a
+                    class="btn2"
+                    href="${song.blockchain_url}"
+                    target="_blank">
+                    Blockchain
+                </a>
+
+            </div>
+
+        </div>
+        `;
+
+        setTimeout(() => {
+
+            const qrElement =
+                document.getElementById("qr-single");
+
+            if(qrElement){
+
+                new QRCode(qrElement,{
+                    text: window.location.href,
+                    width:180,
+                    height:180
+                });
+
+            }
+
+        },100);
+
+        return;
     }
+
+    // MULTIPLE RESULTS
 
     list.forEach(song => {
 
@@ -130,10 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <div class="card">
 
-            <img
-                src="${song.cover}"
-                alt="${song.title}"
-            >
+            <img src="${song.cover}" alt="${song.title}">
 
             <h3>${song.title}</h3>
 
