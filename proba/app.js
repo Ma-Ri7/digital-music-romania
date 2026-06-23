@@ -2,101 +2,88 @@ let songs = [];
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  console.log("DOM READY");
+    const container = document.getElementById("songs-container");
+    const searchBox = document.getElementById("searchBox");
 
-  const searchBox = document.getElementById("searchBox");
-  const container = document.getElementById("songs-container");
+    fetch("data.json")
+        .then(response => response.json())
+        .then(data => {
 
-  if (!searchBox) {
-    console.error("searchBox NU EXISTA");
-    return;
-  }
+            songs = data.songs;
 
-  if (!container) {
-    console.error("songs-container NU EXISTA");
-    return;
-  }
+            renderSongs(songs);
 
-  // LOAD JSON
-  fetch("data.json")
-    .then(res => res.json())
-    .then(data => {
-      songs = data.songs;
-      renderSongs(songs);
-      console.log("DATA LOADED", songs);
-    })
-    .catch(err => console.error("JSON ERROR", err));
+        })
+        .catch(error => {
 
-  // SEARCH
-  searchBox.addEventListener("input", (e) => {
-    const value = e.target.value.toLowerCase();
+            console.error("Eroare la încărcarea data.json:", error);
 
-    const filtered = songs.filter(song =>
-      song.title.toLowerCase().includes(value) ||
-      song.artist.toLowerCase().includes(value) ||
-      song.isrc.toLowerCase().includes(value) ||
-      song.inscription.toLowerCase().includes(value)
-    );
+            container.innerHTML = `
+                <h2 style="color:red">
+                    Nu s-au putut încărca melodiile.
+                </h2>
+            `;
 
-    renderSongs(filtered);
-  });
+        });
 
-  // RENDER FUNCTION
-  function renderSongs(list) {
-    container.innerHTML = container.innerHTML = `
-<div class="cert-box">
+    searchBox.addEventListener("input", () => {
 
-  <div class="status">
-    ✓ BLOCK CONFIRMED ON BSV
-  </div>
+        const value = searchBox.value.toLowerCase();
 
-  <h2>${song.title}</h2>
-  <p class="artist">${song.artist}</p>
+        const filteredSongs = songs.filter(song =>
 
-  <div class="grid">
+            song.title.toLowerCase().includes(value) ||
+            song.artist.toLowerCase().includes(value) ||
+            song.isrc.toLowerCase().includes(value) ||
+            song.inscription.toLowerCase().includes(value)
 
-    <div class="left">
+        );
 
-      <div class="field">
-        <span>ISRC</span>
-        <p>${song.isrc}</p>
-      </div>
+        renderSongs(filteredSongs);
 
-      <div class="field">
-        <span>UPC</span>
-        <p>${song.upc}</p>
-      </div>
+    });
 
-      <div class="field">
-        <span>INSCRIPTION HASH</span>
-        <p id="hashText">${song.inscription}</p>
-        <button onclick="copyHash()">Copy Hash</button>
-      </div>
+    function renderSongs(list) {
 
-      <a href="${song.blockchain_url}" target="_blank" class="btn">
-        Verify on Blockchain
-      </a>
+        container.innerHTML = "";
 
-    </div>
+        list.forEach(song => {
 
-    <div class="right">
-      <div id="qrcode"></div>
-    </div>
+            container.innerHTML += `
 
-  </div>
+            <div class="card">
 
-</div>
-`;
+                <img src="${song.cover}" alt="${song.title}">
 
-// QR CODE
-new QRCode(document.getElementById("qrcode"), {
-  text: song.blockchain_url,
-  width: 140,
-  height: 140
+                <h3>${song.title}</h3>
+
+                <p>${song.artist}</p>
+
+                <p>ISRC: ${song.isrc}</p>
+
+                <div class="buttons">
+
+                    <a
+                    class="btn"
+                    href="certificari/?id=${song.id}">
+                    Certificat
+                    </a>
+
+                    <a
+                    class="btn2"
+                    href="${song.blockchain_url}"
+                    target="_blank">
+                    Blockchain
+                    </a>
+
+                </div>
+
+            </div>
+
+            `;
+
+        });
+
+    }
+
 });
-
-// COPY FUNCTION
-window.copyHash = function() {
-  navigator.clipboard.writeText(song.inscription);
-  alert("Hash copiat!");
-};
