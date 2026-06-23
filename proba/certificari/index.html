@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Certificat Blockchain | Digital Music Romania</title>
+
+<meta name="description"
+content="Certificat oficial de autenticitate pentru muzica Digital Music Romania, verificat pe blockchain Bitcoin SV.">
+
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.cert-container{
+max-width:900px;
+margin:40px auto;
+background:#161616;
+border:1px solid #333;
+padding:30px;
+border-radius:15px;
+}
+
+.cert-title{
+color:#ffd700;
+text-align:center;
+margin-bottom:20px;
+}
+
+.value{
+word-break:break-all;
+margin-bottom:15px;
+color:#ddd;
+}
+
+.label{
+color:#888;
+font-size:13px;
+margin-top:10px;
+}
+
+.verified{
+text-align:center;
+color:#00ff66;
+font-size:20px;
+margin:20px 0;
+font-weight:bold;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 18px;
+background:#ffd700;
+color:#000;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Digital Music Romania</h1>
+<p>Blockchain Certificate Viewer</p>
+</header>
+
+<div class="cert-container">
+
+<h2 class="cert-title">Certificat de Autenticitate</h2>
+
+<div class="verified">✓ VERIFIED ON BITCOIN SV</div>
+
+<div id="content">
+
+<!-- datele vor fi injectate din JS -->
+
+</div>
+
+<a id="blockchainLink" class="btn" target="_blank">
+Verifică pe Blockchain
+</a>
+
+</div>
+
+<script src="../app.js"></script>
+
+<script>
+// =========================
+// GET ID FROM URL
+// =========================
+const params = new URLSearchParams(window.location.search);
+const id = params.get('id');
+
+// =========================
+// FIND SONG
+// =========================
+fetch('../data.json')
+  .then(res => res.json())
+  .then(data => {
+
+    const song = data.songs.find(s => s.id === id);
+
+    const container = document.getElementById('content');
+
+    if (!song) {
+      container.innerHTML = "<p>Certificat inexistent.</p>";
+      return;
+    }
+
+    container.innerHTML = `
+      <div class="label">Titlu</div>
+      <div class="value">${song.title}</div>
+
+      <div class="label">Artist</div>
+      <div class="value">${song.artist}</div>
+
+      <div class="label">ISRC</div>
+      <div class="value">${song.isrc}</div>
+
+      <div class="label">UPC</div>
+      <div class="value">${song.upc}</div>
+
+      <div class="label">Hash Inscription</div>
+      <div class="value">${song.inscription}</div>
+
+      <div class="label">Descriere</div>
+      <div class="value">${song.description}</div>
+    `;
+
+    document.getElementById('blockchainLink').href = song.blockchain_url;
+  });
+</script>
+
+</body>
+</html>

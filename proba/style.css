@@ -1,0 +1,173 @@
+/* =========================
+DIGITAL MUSIC ROMANIA
+BLOCKCHAIN CERTIFICATES
+STYLE.CSS
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #0d0d0d;
+color: #ffffff;
+line-height: 1.6;
+}
+
+/* HEADER */
+header {
+padding: 30px 20px;
+text-align: center;
+border-bottom: 1px solid #222;
+background: #111;
+}
+
+header h1 {
+color: #ffd700;
+font-size: 32px;
+letter-spacing: 1px;
+}
+
+header p {
+color: #aaa;
+margin-top: 5px;
+}
+
+/* HERO */
+.hero {
+text-align: center;
+padding: 60px 20px;
+max-width: 900px;
+margin: auto;
+}
+
+.hero h2 {
+font-size: 28px;
+color: #ffffff;
+margin-bottom: 15px;
+}
+
+.hero p {
+color: #bbb;
+font-size: 16px;
+}
+
+/* SEARCH */
+.search-section {
+text-align: center;
+margin: 20px 0;
+}
+
+#searchBox {
+width: 90%;
+max-width: 500px;
+padding: 12px 15px;
+border-radius: 8px;
+border: 1px solid #333;
+background: #1a1a1a;
+color: white;
+outline: none;
+}
+
+#searchBox:focus {
+border-color: #ffd700;
+}
+
+/* SECTION TITLE */
+.section-title {
+text-align: center;
+margin: 40px 0 20px;
+color: #ffd700;
+font-size: 22px;
+}
+
+/* SONG GRID */
+#songs-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: auto;
+}
+
+/* CARD */
+.card {
+background: #161616;
+border: 1px solid #2a2a2a;
+border-radius: 15px;
+padding: 20px;
+transition: 0.3s ease;
+cursor: pointer;
+}
+
+.card:hover {
+transform: translateY(-5px);
+border-color: #ffd700;
+box-shadow: 0 10px 25px rgba(255, 215, 0, 0.08);
+}
+
+.card img {
+width: 100%;
+border-radius: 10px;
+margin-bottom: 15px;
+}
+
+.card h3 {
+color: #fff;
+margin-bottom: 5px;
+}
+
+.card p {
+color: #aaa;
+font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+display: inline-block;
+margin-top: 10px;
+padding: 10px 15px;
+background: #ffd700;
+color: #000;
+text-decoration: none;
+border-radius: 8px;
+font-weight: bold;
+font-size: 14px;
+}
+
+.btn:hover {
+background: #e6c200;
+}
+
+/* FOOTER */
+footer {
+text-align: center;
+padding: 30px 20px;
+margin-top: 40px;
+border-top: 1px solid #222;
+color: #777;
+font-size: 13px;
+}
+
+footer p {
+margin: 5px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+header h1 {
+font-size: 24px;
+}
+
+.hero h2 {
+font-size: 22px;
+}
+
+.card {
+padding: 15px;
+}
+}
