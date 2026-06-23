@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -75,22 +75,18 @@ Se încarcă...
 <script>
 
 const params = new URLSearchParams(window.location.search);
-
 const id = params.get("id");
 
 fetch("../data.json")
-.then(response => response.json())
+.then(r => r.json())
 .then(data => {
 
-    const song = data.songs.find(song => song.id === id);
+    const song = data.songs.find(s => s.id === id);
 
     if(!song){
-
         document.getElementById("content").innerHTML =
         "<h2>Certificat inexistent</h2>";
-
         return;
-
     }
 
     document.getElementById("content").innerHTML = `
@@ -102,7 +98,6 @@ fetch("../data.json")
         <img class="cover" src="../${song.cover}">
 
         <h1>${song.title}</h1>
-
         <h2>${song.artist}</h2>
 
         <div class="label">ISRC</div>
@@ -112,22 +107,39 @@ fetch("../data.json")
         <div class="value">${song.upc}</div>
 
         <div class="label">INSCRIPTION HASH</div>
-        <div class="value">${song.inscription}</div>
+        <div class="value" id="hashText">${song.inscription}</div>
+
+        <button onclick="copyHash()">
+            COPY HASH
+        </button>
 
         <div class="label">DESCRIERE</div>
         <div class="value">${song.description}</div>
 
         <br><br>
 
-        <a class="btn"
-           href="${song.blockchain_url}"
-           target="_blank">
+        <div id="qrcode"></div>
 
+        <br><br>
+
+        <a class="btn" href="${song.blockchain_url}" target="_blank">
             VERIFY ON BLOCKCHAIN
-
         </a>
 
     `;
+
+    // QR CODE
+    new QRCode(document.getElementById("qrcode"), {
+        text: song.blockchain_url,
+        width: 150,
+        height: 150
+    });
+
+    // COPY FUNCTION
+    window.copyHash = function () {
+        navigator.clipboard.writeText(song.inscription);
+        alert("Hash copiat!");
+    };
 
 });
 
