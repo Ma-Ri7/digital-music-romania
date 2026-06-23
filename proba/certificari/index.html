@@ -1,100 +1,29 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Certificat Blockchain | Digital Music Romania</title>
-
-<link rel="stylesheet" href="../style.css">
-
-<style>
-
-body{
-    background:#0f0f0f;
-    color:white;
-}
-
-.cert-container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.cert-card{
-    background:linear-gradient(145deg,#151515,#0d0d0d);
-    border:1px solid #2a2a2a;
-    border-radius:22px;
-    padding:35px;
-    box-shadow:0 0 40px rgba(255,215,0,0.05);
-}
-
-.verified{
-    color:#00ff88;
-    font-size:22px;
-    font-weight:bold;
-    margin-bottom:20px;
-}
-
-.cover{
-    max-width:300px;
-    width:100%;
-    border-radius:15px;
-}
-
-.label{
-    color:#888;
-    margin-top:20px;
-    font-size:13px;
-}
-
-.value{
-    font-size:18px;
-    word-break:break-all;
-}
-
-</style>
-
-</head>
-<body>
-
-<div class="cert-container">
-
-<div class="cert-card">
-
-<div id="content">
-
-Se încarcă...
-
-</div>
-
-</div>
-
-</div>
-
-<script>
-
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
+console.log("CERT LOAD ID:", id);
+
 fetch("../data.json")
-.then(r => r.json())
+.then(r => {
+    if (!r.ok) throw new Error("JSON not loaded");
+    return r.json();
+})
 .then(data => {
+
+    console.log("DATA OK:", data);
 
     const song = data.songs.find(s => s.id === id);
 
-    if(!song){
+    console.log("FOUND SONG:", song);
+
+    if (!song) {
         document.getElementById("content").innerHTML =
-        "<h2>Certificat inexistent</h2>";
+        "<h2 style='color:red'>Certificat inexistent</h2>";
         return;
     }
 
     document.getElementById("content").innerHTML = `
-
-        <div class="verified">
-            ✓ VERIFIED ON BITCOIN SV
-        </div>
+        <div class="verified">✓ VERIFIED ON BITCOIN SV</div>
 
         <img class="cover" src="../${song.cover}">
 
@@ -107,44 +36,25 @@ fetch("../data.json")
         <div class="label">UPC</div>
         <div class="value">${song.upc}</div>
 
-        <div class="label">INSCRIPTION HASH</div>
-        <div class="value" id="hashText">${song.inscription}</div>
-
-        <button onclick="copyHash()">
-            COPY HASH
-        </button>
+        <div class="label">HASH</div>
+        <div class="value">${song.inscription}</div>
 
         <div class="label">DESCRIERE</div>
         <div class="value">${song.description}</div>
 
         <br><br>
 
-        <div id="qrcode"></div>
-
-        <br><br>
-
         <a class="btn" href="${song.blockchain_url}" target="_blank">
             VERIFY ON BLOCKCHAIN
         </a>
-
     `;
 
-    // QR CODE
-    new QRCode(document.getElementById("qrcode"), {
-        text: song.blockchain_url,
-        width: 150,
-        height: 150
-    });
+})
+.catch(err => {
 
-    // COPY FUNCTION
-    window.copyHash = function () {
-        navigator.clipboard.writeText(song.inscription);
-        alert("Hash copiat!");
-    };
+    console.error("ERROR:", err);
+
+    document.getElementById("content").innerHTML =
+    "<h2 style='color:red'>Eroare la încărcare JSON</h2>";
 
 });
-
-</script>
-
-</body>
-</html>
