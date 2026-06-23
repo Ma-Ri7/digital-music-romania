@@ -1,30 +1,28 @@
-:::writing{variant="document" id="91823"}
 {
-  "songs": [
-    {
-      "id": "inima-de-titan",
-      "title": "Inimă De Titan (Campion Fără Voie)",
-      "artist": "Digital Music Romania",
-      "isrc": "GX4R52663522",
-      "upc": "5063845579259",
-      "cover": "img/inima-de-titan.jpg",
-      "youtube": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
-      "inscription": "585535e0a30c8bd1f1c5b4953cdf9eb04bb37e62405a2e36c6e4a3c6e6dc1bf9",
-      "blockchain_url": "https://ordinals.gorillapool.io/content/585535e0a30c8bd1f1c5b4953cdf9eb04bb37e62405a2e36c6e4a3c6e6dc1bf9",
-      "description": "Piesă trap emoțională și cinematică, cu mesaj motivațional despre luptă și reziliență."
-    },
-    {
-      "id": "raza-mea",
-      "title": "Raza Mea",
-      "artist": "Digital Music Romania",
-      "isrc": "GX4R00000002",
-      "upc": "5063845579002",
-      "cover": "img/raza-mea.jpg",
-      "youtube": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_2",
-      "inscription": "PUT_HASH_HERE",
-      "blockchain_url": "https://ordinals.gorillapool.io/content/PUT_HASH_HERE",
-      "description": "Melodie de dragoste și dor, cu vibe cinematic și emoțional."
-    }
-  ]
+"songs": [
+{
+"id": "inima-de-titan",
+"title": "Inimă De Titan (Campion Fără Voie)",
+"artist": "Digital Music Romania",
+"isrc": "GX4R52663522",
+"upc": "5063845579259",
+"cover": "img/inima-de-titan.jpg",
+"youtube": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
+"inscription": "585535e0a30c8bd1f1c5b4953cdf9eb04bb37e62405a2e36c6e4a3c6e6dc1bf9",
+"blockchain_url": "https://ordinals.gorillapool.io/content/585535e0a30c8bd1f1c5b4953cdf9eb04bb37e62405a2e36c6e4a3c6e6dc1bf9",
+"description": "Piesă trap emoțională și cinematică, cu mesaj motivațional despre luptă și reziliență."
+},
+{
+"id": "raza-mea",
+"title": "Raza Mea",
+"artist": "Digital Music Romania",
+"isrc": "GX4R00000002",
+"upc": "5063845579002",
+"cover": "img/raza-mea.jpg",
+"youtube": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_2",
+"inscription": "PUT_HASH_HERE",
+"blockchain_url": "https://ordinals.gorillapool.io/content/PUT_HASH_HERE",
+"description": "Melodie de dragoste și dor, cu vibe cinematic și emoțional."
 }
-:::
+]
+}
