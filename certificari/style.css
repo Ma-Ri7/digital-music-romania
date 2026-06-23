@@ -262,3 +262,15 @@ h1,h2,h3{
     padding:20px;
     border-radius:12px;
 }
+
+.qr-wrapper{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+#qr-single{
+    background:white;
+    padding:12px;
+    border-radius:10px;
+}

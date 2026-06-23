@@ -103,62 +103,147 @@ document.addEventListener("DOMContentLoaded", () => {
     // Render carduri
     function renderSongs(list) {
 
-        container.innerHTML = "";
+    container.innerHTML = "";
+    container.classList.remove("single-result");
 
-        if (list.length === 0) {
+    if(list.length === 0){
 
-            container.innerHTML = `
-                <h2>
-                    Nu a fost găsită nicio melodie.
-                </h2>
-            `;
+        container.innerHTML = `
+            <h2>Nu a fost găsită nicio melodie.</h2>
+        `;
 
-            return;
+        return;
+    }
 
-        }
+    // SINGLE RESULT MODE
+    if(list.length === 1){
 
-        list.forEach(song => {
+        container.classList.add("single-result");
 
-            container.innerHTML += `
+        const song = list[0];
 
-            <div class="card">
+        container.innerHTML = `
 
-                <img
-                    src="${song.cover}"
-                    alt="${song.title}"
-                >
+        <div class="card">
 
-                <h3>${song.title}</h3>
+            <div class="single-badge">
+                ✓ VERIFIED ON BLOCKCHAIN
+            </div>
 
-                <p>${song.artist}</p>
+            <img src="${song.cover}" alt="${song.title}">
+
+            <h3>${song.title}</h3>
+
+            <p>${song.artist}</p>
+
+            <div class="single-meta">
 
                 <p>
-                    ISRC: ${song.isrc}
+                    <strong>ISRC:</strong>
+                    ${song.isrc}
                 </p>
 
-                <div class="buttons">
+                <p>
+                    <strong>UPC:</strong>
+                    ${song.upc}
+                </p>
 
-                    <a
-                        class="btn"
-                        href="certificari/?id=${song.id}">
-                        Certificat
-                    </a>
-
-                    <a
-                        class="btn2"
-                        href="${song.blockchain_url}"
-                        target="_blank">
-                        Blockchain
-                    </a>
-
-                </div>
+                <p>
+                    <strong>Hash:</strong>
+                    ${song.inscription}
+                </p>
 
             </div>
 
-            `;
+            <div class="single-description">
+                ${song.description}
+            </div>
 
-        });
+            <div class="qr-wrapper">
+                <div id="qr-single"></div>
+            </div>
 
+            <div class="buttons">
+
+                <a
+                    class="btn"
+                    href="certificari/?id=${song.id}">
+                    Certificat
+                </a>
+
+                <a
+                    class="btn2"
+                    href="${song.blockchain_url}"
+                    target="_blank">
+                    Blockchain
+                </a>
+
+            </div>
+
+        </div>
+        `;
+
+        setTimeout(() => {
+
+            const qrElement =
+                document.getElementById("qr-single");
+
+            if(qrElement){
+
+                new QRCode(qrElement,{
+                    text: window.location.href,
+                    width:180,
+                    height:180
+                });
+
+            }
+
+        },100);
+
+        return;
     }
+
+    // MULTIPLE RESULTS
+
+    list.forEach(song => {
+
+        container.innerHTML += `
+
+        <div class="card">
+
+            <img src="${song.cover}" alt="${song.title}">
+
+            <h3>${song.title}</h3>
+
+            <p>${song.artist}</p>
+
+            <p>
+                ISRC: ${song.isrc}
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="btn"
+                    href="certificari/?id=${song.id}">
+                    Certificat
+                </a>
+
+                <a
+                    class="btn2"
+                    href="${song.blockchain_url}"
+                    target="_blank">
+                    Blockchain
+                </a>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+}
 
 });

@@ -190,11 +190,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if(qrElement){
 
-                new QRCode(qrElement,{
-                    text: window.location.href,
-                    width:180,
-                    height:180
-                });
+                const certUrl =
+    window.location.origin +
+    "/certificari/?id=" +
+    song.id;
+
+new QRCode(qrElement,{
+    text: certUrl,
+    width:180,
+    height:180,
+    correctLevel: QRCode.CorrectLevel.H
+});
 
             }
 
