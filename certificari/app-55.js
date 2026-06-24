@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 <a
                     class="btn"
-                    href="certificari/?id=${song.id}">
+                    href="certificari/?search=${encodeURIComponent(song.isrc)}">
                     Certificat
                 </a>
 
