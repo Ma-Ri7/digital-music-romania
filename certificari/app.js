@@ -166,13 +166,13 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="buttons">
 
                 <a
-                    class="btn2"
+                    class="btn"
                     href="certificari/?id=${song.id}">
                     Certificat
                 </a>
 
                 <a
-                    class="btn"
+                    class="btn2"
                     href="${song.blockchain_url}"
                     target="_blank">
                     Blockchain
