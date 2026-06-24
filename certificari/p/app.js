@@ -165,27 +165,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
             <div class="buttons">
 
-                <a
-                    class="btn"
-                    href="/certificari/?search=${encodeURIComponent(song.isrc)}">
-                    Certificat
-                </a>
+    <a
+        class="btn"
+        href="https://push.fm/fl/${encodeURIComponent(song.isrc)}"
+        target="_blank">
+        🎵 Ascultă
+    </a>
 
-                <a
-                    class="btn2"
-                    href="${song.blockchain_url}"
-                    target="_blank">
-                    Blockchain
-                </a>
+    <a
+        class="btn"
+        href="/certificari/?search=${encodeURIComponent(song.isrc)}">
+        📜 Certificat
+    </a>
 
-            </div>
+    <a
+        class="btn2"
+        href="${song.blockchain_url}"
+        target="_blank">
+        ⛓ Blockchain
+    </a>
+
+</div>
 
         </div>
         `;
 
         setTimeout(() => {
 
-            const qrElement = document.getElementById("qr-single"); if(qrElement){ const certUrl = window.location.origin + "/certificari/?search=" + encodeURIComponent(song.isrc); new QRCode(qrElement,{ text: certUrl, width:180, height:180, correctLevel: QRCode.CorrectLevel.H }); }
+            const pushUrl =
+    "https://push.fm/fl/" +
+    encodeURIComponent(song.isrc);
+
+new QRCode(qrElement,{
+    text: pushUrl,
+    width:180,
+    height:180,
+    correctLevel: QRCode.CorrectLevel.H
+});
 
         },100);
 
@@ -212,20 +228,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
             <div class="buttons">
 
-                <a
-                    class="btn"
-                    href="certificari/?id=${song.id}">
-                    Certificat
-                </a>
+    <a
+        class="btn"
+        href="https://push.fm/fl/${encodeURIComponent(song.isrc)}"
+        target="_blank">
+        🎵 Ascultă
+    </a>
 
-                <a
-                    class="btn2"
-                    href="${song.blockchain_url}"
-                    target="_blank">
-                    Blockchain
-                </a>
+    <a
+        class="btn"
+        href="/certificari/?search=${encodeURIComponent(song.isrc)}">
+        📜 Certificat
+    </a>
 
-            </div>
+    <a
+        class="btn2"
+        href="${song.blockchain_url}"
+        target="_blank">
+        ⛓ Blockchain
+    </a>
+
+</div>
 
         </div>
 

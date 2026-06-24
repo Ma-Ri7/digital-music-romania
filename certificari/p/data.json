@@ -1,0 +1,214 @@
+{
+  "songs": [
+    {
+      "id": "inima-de-titan",
+      "title": "Inimă De Titan (Campion Fără Voie)",
+      "artist": "Digital Music Romania",
+      "isrc": "GX4R52663522",
+      "upc": "5063845579259",
+      "cover": "img/inima-de-titan.webp",
+      "inscription": "c5c6730e12b8e0e2154654a1335622c8cfc45d0aaefc84e293c2e34f1b4e788b",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/c5c6730e12b8e0e2154654a1335622c8cfc45d0aaefc84e293c2e34f1b4e788b",
+      "description": "O piesă emoțională și cinematică, cu un vibe dark și motivațional, despre durere, presiune și puterea de a te ridica după fiecare cădere"
+    },
+    {
+      "id": "doua-fete",
+      "title": "Două Fețe",
+      "artist": "Digital Music Romania",
+      "isrc": "GX4R52640354",
+      "upc": "5063845579002",
+      "cover": "img/inima-de-titan.webp",
+      "inscription": "02917e15c84face17000efe2d022f5a96817ac5c7dcd68e9b5e02e6a46df13a2",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/02917e15c84face17000efe2d022f5a96817ac5c7dcd68e9b5e02e6a46df13a2",
+      "description": " 💔 O piesă , dedicată celor care au iubit sincer și au descoperit prea târziu că trăiau într-o relație cu două fețe și două vieți în paralel. Este o poveste despre iubirea trădată, minciuni și adevăruri ascunse."
+    },
+    {
+      "id": "bluff-in-doi",
+      "title": "Bluff În Doi",
+      "artist": "Digital Music Romania",
+      "isrc": "GX4R52685622",
+      "upc": "5063845579002",
+      "cover": "img/inima-de-titan.webp",
+      "inscription": "4560b0e70782586872223f8651768b4677b8788fce1eb31fb13ee4661647a273",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/4560b0e70782586872223f8651768b4677b8788fce1eb31fb13ee4661647a273",
+      "description": "♠️❤️ „Bluff În Doi” este o poveste despre iubire, riscuri și trădare, unde sentimentele devin miza supremă"
+    },
+    {
+      "id": "luceafarul",
+      "title": "Luceafărul",
+      "artist": "Digital Music Romania",
+      "isrc": "GX4R52626883",
+      "upc": "5063845579002",
+      "cover": "img/inima-de-titan.webp",
+      "inscription": "706c66e3370bde34414db36ec350736b99c03c4630cf196fdbf8e762c8c0f3b3",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/706c66e3370bde34414db36ec350736b99c03c4630cf196fdbf8e762c8c0f3b3",
+      "description": "✨ „Luceafărul” este o piesă despre iubirea oferită fără rezerve, dezamăgire și puterea de a merge mai departe"
+    },
+    {
+      "id": "cu-visul-in-ruine-soul-version",
+      "title": "Cu Visul În Ruine (Soul Version)",
+      "artist": "Digital Music Romania",
+      "isrc": "GX4R52696193",
+      "upc": "5063845579002",
+      "cover": "img/inima-de-titan.webp",
+      "inscription": "ef5df48654114fceb32f14a8898b3b5d4d099530dc2ed6b18b2d68b70f99fa4a",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/ef5df48654114fceb32f14a8898b3b5d4d099530dc2ed6b18b2d68b70f99fa4a",
+      "description": "O piesă despre iubirea oferită din toată inima, despre vise construite în doi și despre durerea de a rămâne singur printre ruinele lor."
+    },
+    {
+      "id": "blestemul-meu",
+      "title": "Blestemul Meu",
+      "artist": "Digital Music Romania",
+      "isrc": "GX4R52610196",
+      "upc": "5063845579002",
+      "cover": "img/inima-de-titan.webp",
+      "inscription": "05d8b4af0b891c35c3491344e179dfde41d9d7e69c8b39ec0502b83eb2842812",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/05d8b4af0b891c35c3491344e179dfde41d9d7e69c8b39ec0502b83eb2842812",
+      "description": "O piesă despre iubirea care nu se stinge, chiar și atunci când persoana iubită a devenit doar o amintire."
+    },
+    {
+      "id": "dorul-dupa-mine",
+      "title": "Dorul După Mine",
+      "artist": "Digital Music Romania",
+      "isrc": "GX4R52693090",
+      "upc": "5063845579002",
+      "cover": "img/inima-de-titan.webp",
+      "inscription": "c079b0cc48df10ab39403244cef8b7c5aa13c2341a94f466abce2fc3ddce8ed3",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/c079b0cc48df10ab39403244cef8b7c5aa13c2341a94f466abce2fc3ddce8ed3",
+      "description": "XXX"
+    },
+    {
+      "id": "poate",
+      "title": "Poate",
+      "artist": "Digital Music Romania",
+      "isrc": "GX4R52637713",
+      "upc": "5063845579002",
+      "cover": "img/inima-de-titan.webp",
+      "inscription": "1a7576787856b1f10f65cef04583cd39783f163df4565bbbf9a6d62aa2411a5c",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/1a7576787856b1f10f65cef04583cd39783f163df4565bbbf9a6d62aa2411a5c",
+      "description": "XXX"
+    },
+    {
+      "id": "daca-ai-disparea",
+      "title": "Dacă Ai Dispărea",
+      "artist": "Digital Music Romania",
+      "isrc": "GX4R52634960",
+      "upc": "5063845579002",
+      "cover": "img/inima-de-titan.webp",
+      "inscription": "566e3dbace47dc51cf254ba3e86b2dd631124fb92cfc1757d28e64e0c37df3f5",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/566e3dbace47dc51cf254ba3e86b2dd631124fb92cfc1757d28e64e0c37df3f5",
+      "description": "XXX"
+    },
+    {
+      "id": "final-tacut",
+      "title": "Final Tăcut",
+      "artist": "Digital Music Romania",
+      "isrc": "GX4R52634960",
+      "upc": "5063845579002",
+      "cover": "img/inima-de-titan.webp",
+      "inscription": "cd97b28011d7bf1cc216fbee945321ae256181702ff2b2767d72d41bf499f011",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/cd97b28011d7bf1cc216fbee945321ae256181702ff2b2767d72d41bf499f011",
+      "description": "XXX"
+    },
+    {
+      "id": "intr-o-alta-viata",
+      "title": "Într-o Altă Viață",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2647347",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.webp",
+      "inscription": "a6cd0e6c05ce1d0f31f02c13873c0326a5752fdb319c27a2e851460452b7b51c",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/a6cd0e6c05ce1d0f31f02c13873c0326a5752fdb319c27a2e851460452b7b51c",
+      "description": "XXX"
+    },
+    {
+      "id": "al-cerului-ecou",
+      "title": "Al Cerului Ecou ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2655625",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.webp",
+      "inscription": "5b124edcdc766440121e6c199d8f438ae7df78df91415bba5e21682b23180798",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/5b124edcdc766440121e6c199d8f438ae7df78df91415bba5e21682b23180798",
+      "description": "XXX"
+    },
+    {
+      "id": "in-miez-de-noapte",
+      "title": "În Miez De Noapte ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2665877",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.webp",
+      "inscription": "402a911cf4022765f2179d3996012ea4172cd25f9dc9c8d9b3bd879aa7f072ac",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/402a911cf4022765f2179d3996012ea4172cd25f9dc9c8d9b3bd879aa7f072ac",
+      "description": "XXX"
+    },
+    {
+      "id": "actrita-desavarsita",
+      "title": "Actriță Desăvârșită ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2655659",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.webp",
+      "inscription": "918ac19c4f8ae94c7a1567951874a2ed852e8d4f7dd16e4cedd3829b6001bde6",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/918ac19c4f8ae94c7a1567951874a2ed852e8d4f7dd16e4cedd3829b6001bde6",
+      "description": "XXX"
+    },
+    {
+      "id": "vis-ceresc",
+      "title": "Vis Ceresc",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2657644",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.webp",
+      "inscription": "c803fa24bf50f4dffb2e8e75c61bfded0233a99be8bbcda04667acbb499b2de2",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/c803fa24bf50f4dffb2e8e75c61bfded0233a99be8bbcda04667acbb499b2de2",
+      "description": "XXX"
+    },
+    {
+      "id": "pe-acelasi-drum",
+      "title": "Pe Același Drum",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2637207",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.webp",
+      "inscription": "06db3f50e18e71bf190a60376f716682b6140b46d0ca79332a13b78da2ba06f9",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/06db3f50e18e71bf190a60376f716682b6140b46d0ca79332a13b78da2ba06f9",
+      "description": "XXX"
+    },
+    {
+      "id": "inima-de-cioburi",
+      "title": "Inimă De Cioburi ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXBDS2683480",
+      "upc": "5064010107314",
+      "cover": "img/in-miez-de-noapte.webp",
+      "inscription": "6b82d826adf903b28015ecdecc0f91c9b9f561d6cd43f2b04797b9024bf47bcb",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/6b82d826adf903b28015ecdecc0f91c9b9f561d6cd43f2b04797b9024bf47bcb",
+      "description": "XXX"
+    },
+    {
+      "id": "10-vieti",
+      "title": "10 Vieți ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXESV2650943",
+      "upc": "5064010334895",
+      "cover": "img/10-vieti.webp",
+      "inscription": "69db8a0a125b7d05e0360fd8dc211bdb6b03ce7cd1d1f6cb42ff27a1817346ac",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/69db8a0a125b7d05e0360fd8dc211bdb6b03ce7cd1d1f6cb42ff27a1817346ac",
+      "description": "„10 Vieți” este o piesă care vorbește despre :iubire, dor si speranță. Sper să îți atingă sufletul și să îți aducă o clipă de liniște și inspirație."
+    },
+    {
+      "id": "ce-ai-tu-cinematic",
+      "title": "Ce Ai Tu (Cinematic Version) ",
+      "artist": "Digital Music Romania",
+      "isrc": "GX38U2656251",
+      "upc": "5063958191010",
+      "cover": "img/Ce-ai-tu-cinematic.webp",
+      "inscription": "ed1099f50960649e589f350f4190610981dd2c18f871fa6676e6ccd08b0cdf8f",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/ed1099f50960649e589f350f4190610981dd2c18f871fa6676e6ccd08b0cdf8f",
+      "description": "„Ce Ai Tu (Cinematic Version)” este o piesă care vorbește despre :iubire, dor si speranță. Sper să îți atingă sufletul și să îți aducă o clipă de liniște și inspirație."
+    }
+
+  ]
+}
