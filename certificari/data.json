@@ -197,6 +197,17 @@
       "inscription": "69db8a0a125b7d05e0360fd8dc211bdb6b03ce7cd1d1f6cb42ff27a1817346ac",
       "blockchain_url": "https://ordinals.gorillapool.io/content/69db8a0a125b7d05e0360fd8dc211bdb6b03ce7cd1d1f6cb42ff27a1817346ac",
       "description": "„10 Vieți” este o piesă care vorbește despre :iubire, dor si speranță. Sper să îți atingă sufletul și să îți aducă o clipă de liniște și inspirație."
+    },
+    {
+      "id": "ce-ai-tu-cinematic",
+      "title": "Ce Ai Tu (Cinematic Version) ",
+      "artist": "Digital Music Romania",
+      "isrc": "GX38U2656251",
+      "upc": "5063958191010",
+      "cover": "img/Ce-ai-tu-cinematic.webp",
+      "inscription": "ed1099f50960649e589f350f4190610981dd2c18f871fa6676e6ccd08b0cdf8f",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/ed1099f50960649e589f350f4190610981dd2c18f871fa6676e6ccd08b0cdf8f",
+      "description": "„Ce Ai Tu (Cinematic Version)” este o piesă care vorbește despre :iubire, dor si speranță. Sper să îți atingă sufletul și să îți aducă o clipă de liniște și inspirație."
     }
 
   ]
