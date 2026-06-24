@@ -192,29 +192,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         setTimeout(() => {
 
-    const qrElement = document.getElementById("qr-single");
+            const pushUrl =
+    "https://push.fm/fl/" +
+    encodeURIComponent(song.isrc);
 
-    if (!qrElement) {
-        console.error("Elementul qr-single nu există.");
-        return;
-    }
+new QRCode(qrElement,{
+    text: pushUrl,
+    width:180,
+    height:180,
+    correctLevel: QRCode.CorrectLevel.H
+});
 
-    qrElement.innerHTML = "";
-
-    const pushUrl =
-        "https://push.fm/fl/" +
-        encodeURIComponent(song.isrc);
-
-    console.log("QR URL:", pushUrl);
-
-    new QRCode(qrElement, {
-        text: pushUrl,
-        width: 180,
-        height: 180,
-        correctLevel: QRCode.CorrectLevel.H
-    });
-
-}, 100);
+        },100);
 
         return;
     }
