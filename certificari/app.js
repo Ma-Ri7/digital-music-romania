@@ -186,8 +186,9 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
 
             const qrElement = document.getElementById("qr-single"); 
-            if(qrElement){ const certUrl = window.location.origin + "https://push.fm/fl/" + encodeURIComponent(song.isrc);
-                new QRCode(qrElement,{ text: certUrl, width:180, height:180, correctLevel: QRCode.CorrectLevel.H }); }
+            if(qrElement){ const certUrl = "https://push.fm/fl/" + encodeURIComponent(song.isrc);
+                new QRCode(qrElement,{ text: certUrl, width:180, height:180, correctLevel: QRCode.CorrectLevel.H }); 
+            }
 
         },100);
 

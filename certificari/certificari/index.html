@@ -2,7 +2,7 @@
 
 <html lang="ro">
 <head>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" href="../style.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
 
 <style>
 
@@ -183,23 +183,20 @@ fetch("../data.json")
     // QR CODE către pagina certificatului
     setTimeout(() => {
 
-        const qrContainer =
-            document.getElementById("qrcode");
+    const qrElement = document.getElementById("qrcode");
 
-        new QRCode(qrContainer, {
+    if (!qrElement) return;
 
-            text: window.location.href,
+    const certUrl = "https://push.fm/fl/" + song.isrc;
 
-            width: 300,
+    new QRCode(qrElement, {
+        text: certUrl,
+        width: 180,
+        height: 180,
+        correctLevel: QRCode.CorrectLevel.H
+    });
 
-            height: 300,
-
-            correctLevel:
-                QRCode.CorrectLevel.H
-
-        });
-
-    }, 100);
+}, 100);
 
     // COPY HASH
 
