@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 <a
                     class="btn"
-                    href="certificari/?search=${encodeURIComponent(song.isrc)}">
+                    href="certificari/?id=${song.id}">
                     Certificat
                 </a>
 
@@ -185,7 +185,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
         setTimeout(() => {
 
-            const qrElement = document.getElementById("qr-single"); if(qrElement){ const certUrl = window.location.origin + "/certificari/?search=" + encodeURIComponent(song.isrc); new QRCode(qrElement,{ text: certUrl, width:180, height:180, correctLevel: QRCode.CorrectLevel.H }); }
+            const qrElement =
+                document.getElementById("qr-single");
+
+            if(qrElement){
+
+                const certUrl =
+    window.location.origin +
+    "/certificari/?id=" +
+    song.id;
+
+new QRCode(qrElement,{
+    text: certUrl,
+    width:180,
+    height:180,
+    correctLevel: QRCode.CorrectLevel.H
+});
+
+            }
 
         },100);
 
@@ -214,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 <a
                     class="btn"
-                    href="certificari/?search=${encodeURIComponent(song.isrc)}">
+                    href="certificari/?id=${song.id}">
                     Certificat
                 </a>
 
