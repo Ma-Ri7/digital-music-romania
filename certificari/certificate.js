@@ -306,14 +306,14 @@ Powered by Bitcoin SV Blockchain
     </a>
 
     <a
-        class="btn-action btn-home"
-        href="../">
+    class="btn-action btn-home"
+    href="../registry.html">
 
-        <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-house"></i>
 
-        Music Registry
+    Music Registry
 
-    </a>
+</a>
 
     <button
         id="share-btn"

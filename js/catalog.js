@@ -6,6 +6,10 @@
 
 let allSongs = [];
 let container;
+import {
+    createCatalogCard,
+    createRegistryCard
+} from "./cards.js";
 
 // =====================================================
 // LOAD CATALOG
@@ -23,12 +27,12 @@ export function loadCatalog(songs) {
 
     if (search && search.trim() !== "") {
 
-        const filtered = filterSongs(search);
-        render(filtered);
+        const filtered = filterSongs(allSongs, search);
+        render(filtered.slice(0, 24));
 
     } else {
 
-        render(allSongs);
+        render(allSongs.slice(0, 24));
 
     }
 
@@ -38,11 +42,11 @@ export function loadCatalog(songs) {
 // FILTER
 // =====================================================
 
-export function filterSongs(value) {
+export function filterSongs(list, value) {
 
     value = value.toLowerCase().trim();
 
-    return allSongs.filter(song =>
+    return list.filter(song =>
 
         song.title.toLowerCase().includes(value) ||
 
@@ -69,21 +73,15 @@ export function render(list) {
     if (list.length === 0) {
 
         container.innerHTML = `
-
             <div class="no-results">
-
                 <h2>No Blockchain Record Found</h2>
-
                 <p>
                     No music certificate matches your search.
                 </p>
-
             </div>
-
         `;
 
         return;
-
     }
 
     if (list.length === 1) {
@@ -93,7 +91,6 @@ export function render(list) {
         container.appendChild(createRegistryCard(list[0]));
 
         return;
-
     }
 
     list.forEach(song => {
@@ -103,129 +100,11 @@ export function render(list) {
     });
 
 }
-// =====================================================
-// CATALOG CARD
-// =====================================================
-
-function createCatalogCard(song) {
-
-    const card = document.createElement("div");
-
-    card.className = "registry-card";
-
-    card.innerHTML = `
-
-        <img
-            class="registry-cover"
-            src="${song.cover}"
-            alt="${song.title}">
-
-        <div class="registry-content">
-
-            <h3>${song.title}</h3>
-
-            <p class="registry-artist">
-                ${song.artist}
-            </p>
-
-            <div class="registry-isrc">
-
-                <span>ISRC</span>
-
-                <strong>${song.isrc}</strong>
-
-            </div>
-
-            <div class="registry-footer">
-
-                <span class="registry-network">
-                    Bitcoin SV Blockchain
-                </span>
-
-                <a
-                    class="registry-open"
-                    href="certificari/?search=${encodeURIComponent(song.isrc)}">
-
-                    View Certificate →
-
-                </a>
-
-            </div>
-
-        </div>
-
-    `;
-
-    return card;
-
+export function setContainer(element) {
+    container = element;
 }
 
-// =====================================================
-// SINGLE REGISTRY CARD
-// =====================================================
 
-function createRegistryCard(song) {
-
-    const card = document.createElement("div");
-
-    card.className = "registry-card registry-single";
-
-    card.innerHTML = `
-
-        <div class="registry-status">
-
-            ✓ VERIFIED
-
-        </div>
-
-        <img
-            class="registry-cover"
-            src="${song.cover}"
-            alt="${song.title}">
-
-        <div class="registry-content">
-
-            <h3>${song.title}</h3>
-
-            <p class="registry-artist">
-
-                ${song.artist}
-
-            </p>
-
-            <div class="registry-isrc">
-
-                <span>ISRC</span>
-
-                <strong>${song.isrc}</strong>
-
-            </div>
-
-            <div class="registry-footer">
-
-                <span class="registry-network">
-
-                    Bitcoin SV Blockchain
-
-                </span>
-
-                <a
-                    class="registry-open"
-                    href="certificari/?search=${encodeURIComponent(song.isrc)}">
-
-                    Open Certificate →
-
-                </a>
-
-            </div>
-
-        </div>
-
-    `;
-
-    return card;
-
-}
 
 // =====================================================
 // UTILITIES
@@ -234,11 +113,13 @@ function createRegistryCard(song) {
 export function refreshCatalog() {
 
     const params = new URLSearchParams(window.location.search);
+
     const search = params.get("search");
+    
 
     if (search && search.trim() !== "") {
 
-        render(filterSongs(search));
+        render(filterSongs(allSongs, search));
 
     } else {
 

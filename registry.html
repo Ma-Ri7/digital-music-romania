@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blockchain Registry | Digital Music Romania</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="registry-header">
+
+    <a href="index.html" class="registry-home">
+
+        ← Back to Home
+
+    </a>
+
+    <div class="registry-title">
+
+        <h1>Blockchain Registry</h1>
+
+        <p>
+            Official Digital Music Romania Blockchain Archive
+        </p>
+
+    </div>
+
+</header>
+
+<section class="catalog">
+
+    <h2>Blockchain Registry</h2>
+
+    <div class="registry-stats">
+
+    <div class="stat-box">
+        <span id="total-releases">0</span>
+        <small>Registered Releases</small>
+    </div>
+
+    <div class="stat-box">
+        <span id="total-artists">0</span>
+        <small>Artists</small>
+    </div>
+
+    <div class="stat-box">
+        <span id="visible-results">0</span>
+        <small>Results</small>
+    </div>
+
+</div>
+    <div class="registry-search">
+
+    <input
+        type="text"
+        id="registry-search"
+        placeholder="Search by Title, Artist, ISRC or Inscription">
+
+</div>
+
+<div class="registry-toolbar">
+
+    <div class="registry-sort">
+
+        <label for="sort-select">Sort by</label>
+
+        <select id="sort-select">
+
+            <option value="newest">Newest Releases</option>
+
+            <option value="oldest">Oldest Releases</option>
+
+            <option value="title-asc">Title (A–Z)</option>
+
+            <option value="title-desc">Title (Z–A)</option>
+
+            <option value="artist-asc">Artist (A–Z)</option>
+
+            <option value="artist-desc">Artist (Z–A)</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+    <div id="songs-container"></div>
+
+</section>
+
+<script type="module" src="js/registry.js"></script>
+
+<button id="backToTop" class="back-to-top">
+
+    ↑
+
+</button>
+
+<div id="certificate-modal" class="certificate-modal">
+
+    <div class="certificate-window">
+
+        <button id="certificate-close" class="certificate-close">
+            ×
+        </button>
+
+        <div id="certificate-content"></div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

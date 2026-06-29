@@ -33,6 +33,8 @@ async function init() {
 
     try {
 
+        
+
         const response = await fetch("data.json");
 
         if (!response.ok) {
@@ -73,7 +75,7 @@ async function init() {
         // CATALOG
         // ==========================
 
-        loadCatalog(songs);
+        loadCatalog(songs.slice(0, 24));
 
         // ==========================
         // SEARCH
