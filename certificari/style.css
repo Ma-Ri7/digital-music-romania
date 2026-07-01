@@ -871,7 +871,7 @@ BUTTON BASE
 
 /* PDF */
 
-..btn-print{
+.btn-print{
 
     background:var(--card-light);
 
@@ -992,7 +992,7 @@ ANIMATIONS
 
 }
 
-@media(max-width:900px){
+@media(max-width:768px){
 
 .single-meta{
 
@@ -1088,6 +1088,8 @@ body{
 }
 
 }
+
+
 
 /*==================================================
 PRINT VERSION
@@ -1263,6 +1265,135 @@ body{
     display:none;
 
 }
+
+}
+
+.certificate-header{
+
+    position:sticky;
+    top:0;
+
+    z-index:999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 28px;
+
+    background:#0f0f10;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+}
+
+.back-home{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.back-home:hover{
+
+    color:#FFD700;
+
+}
+
+.certificate-logo{
+
+    text-align:right;
+
+}
+
+.certificate-logo h2{
+
+    font-size:18px;
+
+    margin:0;
+
+    color:#fff;
+
+}
+
+.certificate-logo span{
+
+    color:#aaa;
+
+    font-size:13px;
+
+}
+
+@media (max-width:700px){
+
+.certificate-header{
+
+    padding:14px 18px;
+
+}
+
+.certificate-logo h2{
+
+    font-size:15px;
+
+}
+
+.certificate-logo span{
+
+    display:none;
+
+}
+
+}
+
+.back-home i{
+    transition:.25s;
+}
+
+.back-home:hover i{
+    transform:translateX(-4px);
+}
+
+.certificate-header{
+    margin-bottom:30px;
+    border-radius:18px;
+}
+.preview-actions{
+
+grid-template-columns:1fr;
+
+gap:16px;
+
+}
+
+.preview-actions a{
+
+height:60px;
+
+font-size:17px;
+
+border-radius:16px;
+
+}
+
+.preview-actions a:hover{
+
+background:#252525;
+
+border-color:#B8860B;
+
+transform:translateY(-2px);
 
 }
 

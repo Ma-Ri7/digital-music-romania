@@ -99,15 +99,18 @@ ${shortHash}
           <div class="preview-actions">
 
     <button id="copy-isrc">
+        <i class="fa-solid fa-copy"></i>
         Copy ISRC
     </button>
 
     <button id="copy-hash">
+        <i class="fa-solid fa-fingerprint"></i>
         Copy Blockchain Hash
     </button>
 
     <button id="view-blockchain">
-        View on Blockchain
+        <i class="fa-solid fa-cube"></i>
+        View Blockchain
     </button>
 
 </div>
@@ -126,9 +129,9 @@ const viewBlockchain = document.getElementById("view-blockchain");
     if (!txid) return;
 
     window.open(
-        `https://whatsonchain.com/tx/${txid}`,
-        "_blank"
-    );
+`https://ordinals.gorillapool.io/content/${txid}`,
+"_blank"
+);
 
 });
 

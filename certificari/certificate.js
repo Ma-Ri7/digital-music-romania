@@ -20,9 +20,26 @@ async function init() {
         const search = params.get("search");
 
         if (!search) {
+            const header = `
+<header class="certificate-header">
+
+    <a href="../index.html" class="back-home">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Home
+    </a>
+
+    <div class="certificate-logo">
+        <h2>Digital Music Romania</h2>
+        <span>Blockchain Certificate</span>
+    </div>
+
+</header>
+`;
 
             container.innerHTML = `
-                <div class="card">
+${header}
+
+<div class="card">
                     <div class="card-content">
                         <h2>Nu a fost specificat niciun ISRC.</h2>
                     </div>

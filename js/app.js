@@ -2,13 +2,13 @@
 // Digital Music Romania
 // app.js
 // =====================================================
-
+import { initBackToTop } from "./backtotop.js";
 import { loadHero } from "./hero.js";
 import { loadLatest } from "./latest.js";
 import { loadCarousel } from "./carousel.js";
 import { loadCatalog } from "./catalog.js";
 import { initSearch } from "./search.js";
-
+import { initPreview } from "./certificate-preview.js";
 import {
     initAnimations,
     initHeroParallax,
@@ -82,7 +82,7 @@ async function init() {
         // ==========================
 
         initSearch();
-
+        initPreview();
         // ==========================
         // STATS
         // ==========================
@@ -102,6 +102,12 @@ async function init() {
         rippleButtons();
 
         glowVerified();
+        initBackToTop();
+
+        // ==========================
+
+
+
 
     }
 
