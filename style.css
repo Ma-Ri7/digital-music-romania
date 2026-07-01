@@ -1989,33 +1989,41 @@ nav a{
 
 .certificate-close{
 
-    position:absolute;
-    top:15px;
-    right:15px;
+position:absolute;
+top:18px;
+right:18px;
 
-    width:40px;
-    height:40px;
+width:44px;
+height:44px;
 
-    border:none;
-    border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
 
-    background:rgba(255,255,255,.08);
+border-radius:50%;
 
-    color:#fff;
+background:#181818;
 
-    font-size:24px;
+border:1px solid rgba(184,134,11,.35);
 
-    cursor:pointer;
+color:#fff;
 
-    transition:.2s;
+font-size:22px;
 
+cursor:pointer;
+
+transition:.25s;
 }
 
 .certificate-close:hover{
 
-    background:rgba(255,255,255,.18);
+background:#B8860B;
 
-    transform:rotate(90deg);
+color:#111;
+
+transform:rotate(90deg) scale(1.08);
+
+box-shadow:0 0 18px rgba(184,134,11,.35);
 
 }
 
@@ -2328,3 +2336,106 @@ nav a{
 
 }
 
+/*==================================
+LISTEN EVERYWHERE
+==================================*/
+
+.listen-section{
+
+    padding:90px 20px;
+
+    text-align:center;
+
+}
+
+.listen-section h2{
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+    color:#fff;
+
+}
+
+.listen-subtitle{
+
+    color:#9d9d9d;
+
+    max-width:650px;
+
+    margin:0 auto 45px;
+
+    line-height:1.8;
+
+}
+
+.listen-platforms{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+.listen-platforms a{
+
+    width:72px;
+    height:72px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#B8860B;
+
+    font-size:34px;
+
+    text-decoration:none;
+
+    transition:.30s ease;
+
+}
+
+.listen-platforms a:hover{
+
+    transform:translateY(-6px);
+
+    background:#B8860B;
+
+    color:#111;
+
+    box-shadow:0 15px 35px rgba(184,134,11,.30);
+
+}
+
+@media(max-width:768px){
+
+.listen-platforms{
+
+    gap:18px;
+
+}
+
+.listen-platforms a{
+
+    width:60px;
+    height:60px;
+
+    font-size:28px;
+
+}
+
+}
