@@ -110,7 +110,7 @@ ${shortHash}
 
     <button id="view-blockchain">
         <i class="fa-solid fa-cube"></i>
-        View Blockchain
+        View Blockchain Inscription
     </button>
 
 </div>
