@@ -1,6 +1,17 @@
 {
   "songs": [
     {
+      "id": "nu-ma-parasi-rock-version",
+      "title": " Nu Mă Părăsi (Rock Version) ",
+      "artist": "Digital Music Romania",
+      "isrc": "GX3HH2603551",
+      "upc": "5063959676554",
+      "cover": "covers/ Nu-Ma-Parasi-rock.webp",
+      "inscription": "7aff406a5180abda14ef80383ea748e7626d0da03ac1345b218029f0bbe2c3d7",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/7aff406a5180abda14ef80383ea748e7626d0da03ac1345b218029f0bbe2c3d7",
+      "description": "“Nu Mă Părăsi” este o baladă rock profundă, o piesă despre dorul care nu se stinge, despre dragostea care continuă să trăiască dincolo de timp, distanță și tăcere. Vers cu vers, melodia surprinde lupta dintre amintire și prezent, dintre speranță și singurătate. Este cântecul celor care au iubit profund și încă mai caută, în fiecare răsărit și în fiecare stea, o urmă din ceea ce au pierdut."
+    },
+    {
       "id": "nu-ma-parasi",
       "title": " Nu Mă Părăsi ",
       "artist": "Digital Music Romania",
@@ -1318,17 +1329,6 @@
       "cover": "covers/Nu-Ma-Parasi.webp",
       "inscription": "3c2a36a3301fc78a0ed27c23f4dc345e2140b5a4e5122beb79253ab853fade01",
       "blockchain_url": "https://ordinals.gorillapool.io/content/3c2a36a3301fc78a0ed27c23f4dc345e2140b5a4e5122beb79253ab853fade01",
-      "description": "xxx"
-    },
-    {
-      "id": "nu-ma-parasi-rock-version",
-      "title": " Nu Mă Părăsi (Rock Version) ",
-      "artist": "Digital Music Romania",
-      "isrc": "GX3HH2603551",
-      "upc": "5063959676554",
-      "cover": "covers/xxx.webp",
-      "inscription": "7aff406a5180abda14ef80383ea748e7626d0da03ac1345b218029f0bbe2c3d7",
-      "blockchain_url": "https://ordinals.gorillapool.io/content/7aff406a5180abda14ef80383ea748e7626d0da03ac1345b218029f0bbe2c3d7",
       "description": "xxx"
     },
     {
