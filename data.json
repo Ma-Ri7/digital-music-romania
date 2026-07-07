@@ -1,6 +1,17 @@
 {
   "songs": [
     {
+      "id": "dor-pierdut",
+      "title": "Dor Pierdut ",
+      "artist": "Digital Music Romania",
+      "isrc": "GX3HH2604077",
+      "upc": "5063958073019",
+      "cover": "covers/Dor-Pierdut.webp",
+      "inscription": "d378637c5062d3acceca038770a7762d05d56bc7a1427b2fcf411f45d8c3e49a",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/d378637c5062d3acceca038770a7762d05d56bc7a1427b2fcf411f45d8c3e49a",
+      "description": "O călătorie muzicală plină de iubire și sensibilitate. Versurile evocă dorința de a fi mereu împreună, pictând momente și trăind în armonie. Ascultă acum și lasă-te purtat de emoție!"
+    },
+    {
       "id": "nu-ma-parasi-rock-version",
       "title": " Nu Mă Părăsi (Rock Version) ",
       "artist": "Digital Music Romania",
@@ -1329,17 +1340,6 @@
       "cover": "covers/Nu-Ma-Parasi.webp",
       "inscription": "3c2a36a3301fc78a0ed27c23f4dc345e2140b5a4e5122beb79253ab853fade01",
       "blockchain_url": "https://ordinals.gorillapool.io/content/3c2a36a3301fc78a0ed27c23f4dc345e2140b5a4e5122beb79253ab853fade01",
-      "description": "xxx"
-    },
-    {
-      "id": "dor-pierdut",
-      "title": "Dor Pierdut ",
-      "artist": "Digital Music Romania",
-      "isrc": "GX3HH2604077",
-      "upc": "5063958073019",
-      "cover": "covers/Dor-Pierdut.webp",
-      "inscription": "d378637c5062d3acceca038770a7762d05d56bc7a1427b2fcf411f45d8c3e49a",
-      "blockchain_url": "https://ordinals.gorillapool.io/content/d378637c5062d3acceca038770a7762d05d56bc7a1427b2fcf411f45d8c3e49a",
       "description": "xxx"
     },
     {
