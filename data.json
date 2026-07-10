@@ -1,6 +1,17 @@
 {
   "songs": [
     {
+      "id": "dor-pierdut-rock-version",
+      "title": "Dor Pierdut (Rock Version) ",
+      "artist": "Digital Music Romania",
+      "isrc": "GX3HH2697552",
+      "upc": "5063958150871",
+      "cover": "covers/Dor-Pierdut-Rock.webp",
+      "inscription": "5f912728d390f1b9ef352a5316cf2e1f06e3716464e271ed65e28cac9fdc1dbb",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/5f912728d390f1b9ef352a5316cf2e1f06e3716464e271ed65e28cac9fdc1dbb",
+      "description": "xxx"
+    },
+    {
       "id": "dor-pierdut",
       "title": "Dor Pierdut ",
       "artist": "Digital Music Romania",
@@ -1340,17 +1351,6 @@
       "cover": "covers/Nu-Ma-Parasi.webp",
       "inscription": "3c2a36a3301fc78a0ed27c23f4dc345e2140b5a4e5122beb79253ab853fade01",
       "blockchain_url": "https://ordinals.gorillapool.io/content/3c2a36a3301fc78a0ed27c23f4dc345e2140b5a4e5122beb79253ab853fade01",
-      "description": "xxx"
-    },
-    {
-      "id": "dor-pierdut-rock-version",
-      "title": "Dor Pierdut (Rock Version) ",
-      "artist": "Digital Music Romania",
-      "isrc": "GX3HH2697552",
-      "upc": "5063958150871",
-      "cover": "covers/Dor-Pierdut-Rock.webp",
-      "inscription": "5f912728d390f1b9ef352a5316cf2e1f06e3716464e271ed65e28cac9fdc1dbb",
-      "blockchain_url": "https://ordinals.gorillapool.io/content/5f912728d390f1b9ef352a5316cf2e1f06e3716464e271ed65e28cac9fdc1dbb",
       "description": "xxx"
     },
     {
