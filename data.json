@@ -1563,6 +1563,28 @@
       "description": "xxx"
     },
     {
+      "id": "dor-de-noi-tropical",
+      "title": "Dor De Noi (Tropical ) ",
+      "artist": "Digital Music Romania",
+      "isrc": "xxx",
+      "upc": "xxx",
+      "cover": "covers/tropical.webp",
+      "inscription": "20ac772f44385743c9119ddfac5670119eb39b056738d6ba14a3ea08043dd1e1",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/20ac772f44385743c9119ddfac5670119eb39b056738d6ba14a3ea08043dd1e1",
+      "description": "xxx"
+    },
+    {
+      "id": "dorul-dupa-mine-tropical",
+      "title": "Dorul După Mine(Tropical) ",
+      "artist": "Digital Music Romania",
+      "isrc": "xxx",
+      "upc": "xxx",
+      "cover": "covers/tropical.webp",
+      "inscription": "973fb5963f9558c3c520456ebd4b7e8879c8a32ab1be96616e13bd2cb73b3e9e",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/973fb5963f9558c3c520456ebd4b7e8879c8a32ab1be96616e13bd2cb73b3e9e",
+      "description": "xxx"
+    },
+    {
       "id": "xxx",
       "title": "xxx ",
       "artist": "Digital Music Romania",
@@ -1584,5 +1606,6 @@
       "blockchain_url": "https://ordinals.gorillapool.io/content/xxx",
       "description": "xxx"
     }
+    
   ]
 }
