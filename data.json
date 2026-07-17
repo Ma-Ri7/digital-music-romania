@@ -1585,14 +1585,14 @@
       "description": "xxx"
     },
     {
-      "id": "xxx",
-      "title": "xxx ",
+      "id": "azi-maine-si-mereu-tropical",
+      "title": "Azi Mâine Și Mereu(Tropical) ",
       "artist": "Digital Music Romania",
       "isrc": "xxx",
       "upc": "xxx",
-      "cover": "covers/xxx.webp",
-      "inscription": "xxx",
-      "blockchain_url": "https://ordinals.gorillapool.io/content/xxx",
+      "cover": "covers/tropical.webp",
+      "inscription": "b7dbb4bfdea10c72c90f043c11ba04a89bd434534241126a33e2c5047b5ecefe",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/b7dbb4bfdea10c72c90f043c11ba04a89bd434534241126a33e2c5047b5ecefe",
       "description": "xxx"
     },
     {
