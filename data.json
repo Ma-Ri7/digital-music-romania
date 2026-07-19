@@ -1607,6 +1607,138 @@
       "description": "xxx"
     },
     {
+      "id": "prea-tarziu",
+      "title": "Prea Târziu",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2658345",
+      "upc": "5064041660345",
+      "cover": "covers/Printre-Stele-Album.webp",
+      "inscription": "fe2047cc819e7414ad6ef567899ffe1a03e2903085fb3080e9b4b047955bd312",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/fe2047cc819e7414ad6ef567899ffe1a03e2903085fb3080e9b4b047955bd312",
+      "description": "xxx"
+    },
+    {
+      "id": "o-noua-zi",
+      "title": "O Nouă Zi ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2635137",
+      "upc": "5064041660345",
+      "cover": "covers/Printre-Stele-Album.webp",
+      "inscription": "f0fa24d66d477ed56fc0723616816fe9733c9daef16354f113009fa555379969",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/f0fa24d66d477ed56fc0723616816fe9733c9daef16354f113009fa555379969",
+      "description": "xxx"
+    },
+    {
+      "id": "10-vieti-HH",
+      "title": "10 Vieți (HH) ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2661751",
+      "upc": "5064041660345",
+      "cover": "covers/xxx.webp",
+      "inscription": "6d989f51ef18fa3f79926cb9576b1557099d23049425a5baff9e01548a664e57",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/6d989f51ef18fa3f79926cb9576b1557099d23049425a5baff9e01548a664e57",
+      "description": "xxx"
+    },
+    {
+      "id": "pe-veci-in-inima-mea-HH",
+      "title": "Pe Veci În Inima Mea (HH) ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2662965",
+      "upc": "5064041660345",
+      "cover": "covers/xxx.webp",
+      "inscription": "5b5b0ac3fc01122224912b7ef31599397a148d04bccd84075354a32ddb835d86",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/5b5b0ac3fc01122224912b7ef31599397a148d04bccd84075354a32ddb835d86",
+      "description": "xxx"
+    },
+    {
+      "id": "poza-ta",
+      "title": "Poza Ta ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2659817",
+      "upc": "5064041660345",
+      "cover": "covers/Printre-Stele-Album.webp",
+      "inscription": "c4a4a6860647f2d5063506dc30cbe79bee2fdf93086f0650e7b7e310688864fc",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/c4a4a6860647f2d5063506dc30cbe79bee2fdf93086f0650e7b7e310688864fc",
+      "description": "xxx"
+    },
+    {
+      "id": "printre-stele",
+      "title": "Printre Stele  ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2696133",
+      "upc": "5064041660345",
+      "cover": "covers/Printre-Stele-Album.webp",
+      "inscription": "be0e75b9e164a855eaf77c5283e51c8f6deb7b3d60ff85cf2c60f5890a131e97",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/be0e75b9e164a855eaf77c5283e51c8f6deb7b3d60ff85cf2c60f5890a131e97",
+      "description": "xxx"
+    },
+    {
+      "id": "eu-ma-vindec",
+      "title": "Eu Mă Vindec ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2613770",
+      "upc": "5064041660345",
+      "cover": "covers/Printre-Stele-Album.webp",
+      "inscription": "2c977d96b8bed49fc11435cd47f40a38609657d7c98dacefd1364826732035c0",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/2c977d96b8bed49fc11435cd47f40a38609657d7c98dacefd1364826732035c0",
+      "description": "xxx"
+    },
+    {
+      "id": "nu-ma-parasi-HH",
+      "title": "Nu Mă Părăsi (HH) ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2695860",
+      "upc": "5064041660345",
+      "cover": "covers/Printre-Stele-Album.webp",
+      "inscription": "0b5c6cad2e78b7aeca8646e4c36c6b92875dfde2a757ce113599ad6ed0ad0131",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/0b5c6cad2e78b7aeca8646e4c36c6b92875dfde2a757ce113599ad6ed0ad0131",
+      "description": "xxx"
+    },
+    {
+      "id": "dor-de-noi",
+      "title": "Dor De Noi ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2675986",
+      "upc": "5064041660345",
+      "cover": "covers/Printre-Stele-Album.webp",
+      "inscription": "ffb45ab96d567f2b459650a05b5867cb66d1d9bc1ad897a50a5b1e3744cd881b",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/ffb45ab96d567f2b459650a05b5867cb66d1d9bc1ad897a50a5b1e3744cd881b",
+      "description": "xxx"
+    },
+    {
+      "id": "ramai-a-mea",
+      "title": "Rămâi A Mea ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2677883",
+      "upc": "5064041660345",
+      "cover": "covers/Printre-Stele-Album.webp",
+      "inscription": "90e53efc4fb85505baecf8ffd0fca10bcf6ac7b6e4ca0104e25f0f553b391485",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/90e53efc4fb85505baecf8ffd0fca10bcf6ac7b6e4ca0104e25f0f553b391485",
+      "description": "xxx"
+    },
+    {
+      "id": "te-aleg-mereu-asa",
+      "title": "Te Aleg Mereu Așa ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2641715",
+      "upc": "5064041660345",
+      "cover": "covers/Printre-Stele-Album.webp",
+      "inscription": "bb7eafc73c0ad31753b999ab5b4fa903cd006e2d55be153b5435206ab86c5dc5",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/bb7eafc73c0ad31753b999ab5b4fa903cd006e2d55be153b5435206ab86c5dc5",
+      "description": "xxx"
+    },
+    {
+      "id": "te-aleg-mereu-asa-rb",
+      "title": "Te Aleg Mereu Așa (R&B) ",
+      "artist": "Digital Music Romania",
+      "isrc": "GXHZK2686311",
+      "upc": "5064041660345",
+      "cover": "covers/Printre-Stele-Album.webp",
+      "inscription": "c5cdfe372aa143576029ec7224b8e5672a066480052fa9feae4164441f6210da",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/c5cdfe372aa143576029ec7224b8e5672a066480052fa9feae4164441f6210da",
+      "description": "xxx"
+    },
+    {
       "id": "xxx",
       "title": "xxx ",
       "artist": "Digital Music Romania",
