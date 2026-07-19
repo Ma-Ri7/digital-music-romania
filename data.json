@@ -1596,6 +1596,17 @@
       "description": "xxx"
     },
     {
+      "id": "blestemul-meu-tropical",
+      "title": "Blestemul Meu(Tropical) ",
+      "artist": "Digital Music Romania",
+      "isrc": "23",
+      "upc": "xxx",
+      "cover": "covers/tropical.webp",
+      "inscription": "129deaa3ac4f02a936bdeecb76ce67e6115bae2dcac61fec5faf716044f4d940",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/129deaa3ac4f02a936bdeecb76ce67e6115bae2dcac61fec5faf716044f4d940",
+      "description": "xxx"
+    },
+    {
       "id": "xxx",
       "title": "xxx ",
       "artist": "Digital Music Romania",
