@@ -1739,6 +1739,17 @@
       "description": "xxx"
     },
     {
+      "id": "ca-o-vioara-tropical",
+      "title": "Ca O Vioară(Tropical) ",
+      "artist": "Digital Music Romania",
+      "isrc": "24",
+      "upc": "xxx",
+      "cover": "covers/tropical.webp",
+      "inscription": "449f2ec5809029d65660ceb08959578e6c27a5ff125fbd6a69fef563fab32772",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/449f2ec5809029d65660ceb08959578e6c27a5ff125fbd6a69fef563fab32772",
+      "description": "xxx"
+    },
+    {
       "id": "xxx",
       "title": "xxx ",
       "artist": "Digital Music Romania",
