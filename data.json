@@ -1750,6 +1750,28 @@
       "description": "xxx"
     },
     {
+      "id": "ce-ai-tu-tropical",
+      "title": "Ce Ai Tu(Tropical) ",
+      "artist": "Digital Music Romania",
+      "isrc": "25",
+      "upc": "xxx",
+      "cover": "covers/tropical.webp",
+      "inscription": "8eb7eb5744c99db53aab1cf385d4266d4e6a76f3abc2fee0f4caa7e0804776b6",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/8eb7eb5744c99db53aab1cf385d4266d4e6a76f3abc2fee0f4caa7e0804776b6",
+      "description": "xxx"
+    },
+    {
+      "id": "un-vechi-fotoliu-tropical",
+      "title": "Un Vechi Fotoliu(Tropical) ",
+      "artist": "Digital Music Romania",
+      "isrc": "26",
+      "upc": "xxx",
+      "cover": "covers/tropical.webp",
+      "inscription": "d1b2d8266a19108bef4fcd7ae469cbd3ce71f39a514d643f03496d0b4b21efa6",
+      "blockchain_url": "https://ordinals.gorillapool.io/content/d1b2d8266a19108bef4fcd7ae469cbd3ce71f39a514d643f03496d0b4b21efa6",
+      "description": "xxx"
+    },
+    {
       "id": "xxx",
       "title": "xxx ",
       "artist": "Digital Music Romania",
