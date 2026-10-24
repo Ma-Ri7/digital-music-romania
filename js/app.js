@@ -3,6 +3,7 @@
 // app.js
 // =====================================================
 import { initBackToTop } from "./backtotop.js";
+import { t } from "./i18n/runtime.js";
 import { loadHero } from "./hero.js";
 import { loadLatest } from "./latest.js";
 import { loadCarousel } from "./carousel.js";
@@ -39,7 +40,7 @@ async function init() {
 
         if (!response.ok) {
 
-            throw new Error("Nu s-a putut încărca data.json");
+            throw new Error(t("app.loadError"));
 
         }
 
@@ -49,7 +50,7 @@ async function init() {
 
         if (!songs.length) {
 
-            throw new Error("Catalog gol.");
+            throw new Error(t("app.emptyCatalog"));
 
         }
 
@@ -124,10 +125,10 @@ async function init() {
 
                 <div class="no-results">
 
-                    <h2>⚠ Catalog indisponibil</h2>
+                    <h2>${t("app.catalogUnavailable")}</h2>
 
                     <p>
-                        Nu s-a putut încărca fișierul data.json.
+                        ${t("app.catalogUnavailableMessage")}
                     </p>
 
                 </div>

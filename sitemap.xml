@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://digitalmusicromania.com/certificari/?search=GX5MX2504700</loc>
     <changefreq>weekly</changefreq>
@@ -521,11 +522,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GX4R52611732</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://digitalmusicromania.com/certificari/?search=GX4R52663522</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -566,16 +562,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GX4R52634960</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GX4R52604134</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://digitalmusicromania.com/certificari/?search=GXBDS2647347</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -611,72 +597,99 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GX3HH2697552</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GX3HH2603551</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GXF972516899</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GXF972504104</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GX8LE2549689</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GX8LD2587619</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GXBDT2529856</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GXBDT2542493</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GX8LE2603472</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://digitalmusicromania.com/certificari/?search=GX8LD2594384</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://digitalmusicromania.com/certificari/?search=GXESV2650943</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://digitalmusicromania.com/</loc>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2613770</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://digitalmusicromania.com/index.html</loc>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2635137</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2641715</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2658345</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2659817</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2661751</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2662965</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2675986</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2677883</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2686311</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2695860</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/certificari/?search=GXHZK2696133</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalmusicromania.com/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://digitalmusicromania.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalmusicromania.com/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/ro/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://digitalmusicromania.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalmusicromania.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalmusicromania.com/"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://digitalmusicromania.com/registry.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalmusicromania.com/registry.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://digitalmusicromania.com/ro/registru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalmusicromania.com/registry.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://digitalmusicromania.com/ro/registru/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://digitalmusicromania.com/ro/registru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digitalmusicromania.com/registry.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digitalmusicromania.com/registry.html"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

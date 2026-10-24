@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registru Blockchain | Digital Music Romania</title>
+
+    <meta name="description"
+    content="Registrul blockchain oficial al Digital Music Romania. Caută lansări după titlu, artist, ISRC sau inscripție.">
+
+    <link rel="canonical" href="https://digitalmusicromania.com/ro/registru/">
+    <link rel="alternate" hreflang="ro" href="https://digitalmusicromania.com/ro/registru/">
+    <link rel="alternate" hreflang="en" href="https://digitalmusicromania.com/registry.html">
+    <link rel="alternate" hreflang="x-default" href="https://digitalmusicromania.com/registry.html">
+
+    <!--
+      <base href="/"> este necesar pentru ca modulele existente
+      (care folosesc cai relative: data.json, certificari/) sa
+      functioneze corect si de pe /ro/registru/.
+    -->
+    <base href="/">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/i18n.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+<header class="registry-header">
+
+    <a href="/ro/" class="registry-home">
+
+        ← Înapoi acasă
+
+    </a>
+
+    <div
+    class="lang-switcher"
+    data-lang-switcher
+    role="navigation"
+    aria-label="Limbă">
+
+    <a
+    class="lang-option"
+    data-lang-option="ro"
+    href="/ro/registru/"
+    hreflang="ro"
+    lang="ro"
+    aria-current="true">RO</a>
+
+    <span class="lang-separator" aria-hidden="true">|</span>
+
+    <a
+    class="lang-option"
+    data-lang-option="en"
+    href="/registry.html"
+    hreflang="en"
+    lang="en">EN</a>
+
+    </div>
+
+    <div class="registry-title">
+
+        <h1>Registru Blockchain</h1>
+
+        <p>
+            Arhiva oficială blockchain Digital Music Romania
+        </p>
+
+    </div>
+
+</header>
+
+<section class="catalog">
+
+    <h2>Registru Blockchain</h2>
+
+    <div class="registry-stats">
+
+    <div class="stat-box">
+        <span id="total-releases">0</span>
+        <small>Lansări înregistrate</small>
+    </div>
+
+    <div class="stat-box">
+        <span id="total-artists">0</span>
+        <small>Artiști</small>
+    </div>
+
+    <div class="stat-box">
+        <span id="visible-results">0</span>
+        <small>Rezultate</small>
+    </div>
+
+</div>
+    <div class="registry-search">
+
+    <input
+        type="text"
+        id="registry-search"
+        placeholder="Caută după titlu, artist, ISRC sau inscripție">
+
+</div>
+
+<div class="registry-toolbar">
+
+    <div class="registry-sort">
+
+        <label for="sort-select">Sortează după</label>
+
+        <select id="sort-select">
+
+            <option value="newest">Cele mai noi</option>
+
+            <option value="oldest">Cele mai vechi</option>
+
+            <option value="title-asc">Titlu (A–Z)</option>
+
+            <option value="title-desc">Titlu (Z–A)</option>
+
+            <option value="artist-asc">Artist (A–Z)</option>
+
+            <option value="artist-desc">Artist (Z–A)</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+    <div id="songs-container"></div>
+
+</section>
+
+<script type="module" src="/js/registry.js"></script>
+<script type="module" src="/js/i18n/page.js"></script>
+
+<button id="back-to-top" class="back-to-top">
+
+    ↑
+
+</button>
+
+<div id="certificate-modal" class="certificate-modal">
+
+    <div class="certificate-window">
+
+        <button id="certificate-close" class="certificate-close">
+            ×
+        </button>
+
+        <div id="certificate-content"></div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

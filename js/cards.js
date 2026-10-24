@@ -1,4 +1,5 @@
 import { openPreview } from "./certificate-preview.js";
+import { t } from "./i18n/runtime.js";
 // =====================================================
 // CATALOG CARD
 // =====================================================
@@ -33,7 +34,7 @@ export function createCatalogCard(song) {
 
             <div class="registry-isrc">
 
-                <span>ISRC</span>
+                <span>${t("cards.isrc")}</span>
 
                 <strong>${song.isrc}</strong>
 
@@ -42,14 +43,14 @@ export function createCatalogCard(song) {
             <div class="registry-footer">
 
                 <span class="registry-network">
-                    Bitcoin SV Blockchain
+                    ${t("cards.network")}
                 </span>
 
                 <a
                     class="registry-open"
                     href="certificari/?search=${encodeURIComponent(song.isrc)}">
 
-                    View Certificate →
+                    ${t("cards.viewCertificate")}
 
                 </a>
 
@@ -77,7 +78,7 @@ export function createRegistryCard(song) {
 
         <div class="registry-status">
 
-            ✓ VERIFIED
+            ${t("cards.verified")}
 
         </div>
 
@@ -98,7 +99,7 @@ export function createRegistryCard(song) {
 
             <div class="registry-isrc">
 
-                <span>ISRC</span>
+                <span>${t("cards.isrc")}</span>
 
                 <strong>${song.isrc}</strong>
 
@@ -108,7 +109,7 @@ export function createRegistryCard(song) {
 
                 <span class="registry-network">
 
-                    Bitcoin SV Blockchain
+                    ${t("cards.network")}
 
                 </span>
 
@@ -116,7 +117,7 @@ export function createRegistryCard(song) {
                     class="registry-open"
                     href="certificari/?search=${encodeURIComponent(song.isrc)}">
 
-                    Open Certificate →
+                    ${t("cards.openCertificate")}
 
                 </a>
 

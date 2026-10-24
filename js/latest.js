@@ -3,6 +3,8 @@
 // latest.js
 // =====================================================
 
+import { t } from "./i18n/runtime.js";
+
 // =====================================================
 // LOAD LATEST RELEASE
 // =====================================================
@@ -43,7 +45,7 @@ export function loadLatest(song){
 
         description.textContent =
             song.description ||
-            "Official Blockchain Certified Release.";
+            t("latest.descriptionFallback");
 
     }
 

@@ -1,3 +1,5 @@
+import { t } from "./i18n/runtime.js";
+
 export function openPreview(song) {
 
     console.log("openPreview()", song);
@@ -38,7 +40,7 @@ txid.length > 24
         <div class="preview-header">
 
     <div class="preview-badge">
-        ✓ VERIFIED
+        ${t("preview.verifiedBadge")}
     </div>
 
     <h2>${song.title}</h2>
@@ -49,15 +51,15 @@ txid.length > 24
 
         <div class="preview-section">
 
-    <h4>Certificate Information</h4>
+    <h4>${t("preview.certificateInfo")}</h4>
 
     <div class="meta-row">
-        <span>ISRC</span>
+        <span>${t("preview.isrc")}</span>
         <strong>${song.isrc}</strong>
     </div>
 
     <div class="meta-row">
-        <span>Transaction Hash (TXID)</span>
+        <span>${t("preview.txid")}</span>
          <strong>
 
 <a
@@ -74,23 +76,23 @@ ${shortHash}
     </div>
 
     <div class="meta-row">
-        <span>Status</span>
-        <strong class="status-ok">Verified ✓</strong>
+        <span>${t("preview.status")}</span>
+        <strong class="status-ok">${t("preview.statusVerified")}</strong>
     </div>
 
 </div>
 
 <div class="preview-section">
 
-    <h4>Blockchain</h4>
+    <h4>${t("preview.blockchain")}</h4>
 
     <div class="meta-row">
-        <span>Network</span>
+        <span>${t("preview.network")}</span>
         <strong>Bitcoin SV</strong>
     </div>
 
     <div class="meta-row">
-        <span>Registration</span>
+        <span>${t("preview.registration")}</span>
         <strong>${song.registrationDate || "-"}</strong>
     </div>
 
@@ -100,17 +102,17 @@ ${shortHash}
 
     <button id="copy-isrc">
         <i class="fa-solid fa-copy"></i>
-        Copy ISRC
+        ${t("preview.copyIsrc")}
     </button>
 
     <button id="copy-hash">
         <i class="fa-solid fa-fingerprint"></i>
-        Copy Blockchain Hash
+        ${t("preview.copyHash")}
     </button>
 
     <button id="view-blockchain">
         <i class="fa-solid fa-cube"></i>
-        View Blockchain Inscription
+        ${t("preview.viewInscription")}
     </button>
 
 </div>
@@ -141,11 +143,11 @@ copyHash.addEventListener("click", async () => {
 
     await navigator.clipboard.writeText(txid);
 
-    copyHash.textContent = "Copied!";
+    copyHash.textContent = t("preview.copied");
 
     setTimeout(() => {
 
-        copyHash.textContent = "Copy Blockchain Hash";
+        copyHash.textContent = t("preview.copyHash");
 
     }, 1500);
 
@@ -155,11 +157,11 @@ copyIsrc.addEventListener("click", async () => {
 
     await navigator.clipboard.writeText(song.isrc);
 
-    copyIsrc.textContent = "Copied!";
+    copyIsrc.textContent = t("preview.copied");
 
     setTimeout(() => {
 
-        copyIsrc.textContent = "Copy ISRC";
+        copyIsrc.textContent = t("preview.copyIsrc");
 
     }, 1500);
 

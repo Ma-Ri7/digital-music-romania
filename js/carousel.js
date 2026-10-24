@@ -3,6 +3,8 @@
 // carousel.js
 // =====================================================
 
+import { t } from "./i18n/runtime.js";
+
 export function loadCarousel(songs) {
 
     const carousel = document.getElementById("carousel");
@@ -52,7 +54,7 @@ function createCarouselCard(song) {
                     class="carousel-btn gold"
                     href="certificari/?search=${encodeURIComponent(song.isrc)}">
 
-                    Certificate
+                    ${t("carousel.certificate")}
 
                 </a>
 
@@ -61,7 +63,7 @@ function createCarouselCard(song) {
                     href="${window.location.origin}/i/?song=${encodeURIComponent(song.id)}"
                     target="_blank">
 
-                      Inscription
+                      ${t("carousel.inscription")}
 
                 </a>
 

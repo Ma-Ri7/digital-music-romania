@@ -1,0 +1,277 @@
+/* ==========================================================
+   DIGITAL MUSIC ROMANIA — i18n
+   Selector de limba RO | EN si propunere de limba
+   Se incarca DUPA style.css. Nu modifica stilurile existente:
+   toate regulile sunt prefixate cu clasele componentului.
+========================================================== */
+
+/* ----------------------------------------------------------
+   SELECTOR RO | EN
+   Se foloseste .lang-switcher (clasa) si NU elementul <nav>,
+   pentru a nu mosteni regulile globale `nav{...}` din style.css.
+---------------------------------------------------------- */
+
+.lang-switcher{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    flex-direction:row;
+    position:static;
+    width:auto;
+
+    margin-left:24px;
+    padding:0;
+
+    background:none;
+    border:none;
+
+}
+
+.lang-switcher .lang-option{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-width:44px;
+    min-height:44px;
+
+    padding:6px 10px;
+
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:10px;
+
+    color:#bdbdbd;
+    background:rgba(255,255,255,.03);
+
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:.08em;
+    line-height:1;
+
+    transition:.25s;
+
+}
+
+.lang-switcher .lang-option:hover,
+.lang-switcher .lang-option:focus-visible{
+
+    color:#111;
+    background:#FFD700;
+    border-color:#FFD700;
+
+}
+
+.lang-switcher .lang-option[aria-current="true"]{
+
+    color:#111;
+    background:#FFD700;
+    border-color:#FFD700;
+
+    cursor:default;
+
+}
+
+.lang-switcher .lang-separator{
+
+    color:rgba(255,255,255,.28);
+    font-size:13px;
+
+    user-select:none;
+
+}
+
+/* ----------------------------------------------------------
+   SELECTOR RO | EN in antetul registrului
+   Se pastreaza asezarea existenta: linkul "inapoi" ramane in
+   stanga, titlul ramane in dreapta, selectorul se aseaza langa
+   linkul de intoarcere. `margin-right:auto` absoarbe spatiul
+   liber inaintea titlului, deci titlul nu isi schimba pozitia.
+---------------------------------------------------------- */
+
+.registry-header .lang-switcher{
+
+    margin-left:12px;
+    margin-right:auto;
+
+}
+
+@media(max-width:768px){
+
+    .registry-header .lang-switcher{
+
+        margin-left:0;
+
+    }
+
+}
+
+/* ----------------------------------------------------------
+   PROPUNERE DE LIMBA
+   Afisata doar cand limba detectata sosit prea tarziu pentru
+   o navigare fara "flash" de limba.
+---------------------------------------------------------- */
+
+.lang-suggestion{
+
+    position:fixed;
+
+    left:50%;
+    bottom:24px;
+
+    transform:translateX(-50%);
+
+    z-index:1200;
+
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:14px;
+
+    max-width:min(680px,92vw);
+
+    padding:14px 18px;
+
+    background:#111;
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:14px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.55);
+
+}
+
+.lang-suggestion-text{
+
+    margin:0;
+
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+
+}
+
+.lang-suggestion-action{
+
+    color:#FFD700;
+    font-weight:700;
+    font-size:15px;
+
+    text-decoration:underline;
+
+}
+
+.lang-suggestion-action:hover,
+.lang-suggestion-action:focus-visible{
+
+    color:#B8860B;
+
+}
+
+.lang-suggestion-dismiss{
+
+    margin-left:auto;
+
+    padding:8px 14px;
+
+    background:none;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:10px;
+
+    color:#bdbdbd;
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.lang-suggestion-dismiss:hover,
+.lang-suggestion-dismiss:focus-visible{
+
+    color:#fff;
+    border-color:#fff;
+
+}
+
+/* ----------------------------------------------------------
+   ACCESIBILITATE
+---------------------------------------------------------- */
+
+.lang-switcher .lang-option:focus-visible,
+.lang-suggestion-action:focus-visible,
+.lang-suggestion-dismiss:focus-visible{
+
+    outline:2px solid #FFD700;
+    outline-offset:2px;
+
+}
+
+/* ----------------------------------------------------------
+   MOBIL
+---------------------------------------------------------- */
+
+@media(max-width:900px){
+
+    .lang-switcher{
+
+        margin-left:0;
+        margin-right:14px;
+
+    }
+
+    .lang-switcher .lang-option{
+
+        min-width:42px;
+        min-height:42px;
+        padding:6px 8px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .lang-switcher{
+
+        gap:6px;
+        margin-right:10px;
+
+    }
+
+    .lang-switcher .lang-option{
+
+        min-width:40px;
+        min-height:40px;
+
+        font-size:13px;
+
+    }
+
+    .lang-suggestion{
+
+        left:12px;
+        right:12px;
+
+        bottom:12px;
+
+        transform:none;
+
+        max-width:none;
+
+        justify-content:center;
+
+        text-align:center;
+
+    }
+
+    .lang-suggestion-dismiss{
+
+        margin-left:0;
+
+    }
+
+}

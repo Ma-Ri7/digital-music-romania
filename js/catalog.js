@@ -10,6 +10,7 @@ import {
     createCatalogCard,
     createRegistryCard
 } from "./cards.js";
+import { t } from "./i18n/runtime.js";
 
 // =====================================================
 // LOAD CATALOG
@@ -74,9 +75,9 @@ export function render(list) {
 
         container.innerHTML = `
             <div class="no-results">
-                <h2>No Blockchain Record Found</h2>
+                <h2>${t("catalog.emptyTitle")}</h2>
                 <p>
-                    No music certificate matches your search.
+                    ${t("catalog.emptyMessage")}
                 </p>
             </div>
         `;

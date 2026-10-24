@@ -8,7 +8,16 @@
 
     <title>Blockchain Registry | Digital Music Romania</title>
 
+    <meta name="description"
+    content="Official blockchain registry of Digital Music Romania. Search releases by title, artist, ISRC or inscription.">
+
+    <link rel="canonical" href="https://digitalmusicromania.com/registry.html">
+    <link rel="alternate" hreflang="en" href="https://digitalmusicromania.com/registry.html">
+    <link rel="alternate" hreflang="ro" href="https://digitalmusicromania.com/ro/registru/">
+    <link rel="alternate" hreflang="x-default" href="https://digitalmusicromania.com/registry.html">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/i18n.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
@@ -22,6 +31,31 @@
         ← Back to Home
 
     </a>
+
+    <div
+    class="lang-switcher"
+    data-lang-switcher
+    role="navigation"
+    aria-label="Language">
+
+    <a
+    class="lang-option"
+    data-lang-option="ro"
+    href="/ro/registru/"
+    hreflang="ro"
+    lang="ro">RO</a>
+
+    <span class="lang-separator" aria-hidden="true">|</span>
+
+    <a
+    class="lang-option"
+    data-lang-option="en"
+    href="/registry.html"
+    hreflang="en"
+    lang="en"
+    aria-current="true">EN</a>
+
+    </div>
 
     <div class="registry-title">
 
@@ -97,6 +131,7 @@
 </section>
 
 <script type="module" src="js/registry.js"></script>
+<script type="module" src="js/i18n/page.js"></script>
 
 <button id="back-to-top" class="back-to-top">
 
